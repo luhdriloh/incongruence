@@ -1,0 +1,1957 @@
+fileFormatVersion: 2
+guid: 76f92cab430b34b309689ac62ede19f5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 16bit_dungeon_tileset_0
+    21300002: 16bit_dungeon_tileset_1
+    21300004: 16bit_dungeon_tileset_2
+    21300006: 16bit_dungeon_tileset_3
+    21300008: 16bit_dungeon_tileset_4
+    21300010: 16bit_dungeon_tileset_5
+    21300012: 16bit_dungeon_tileset_8
+    21300014: 16bit_dungeon_tileset_9
+    21300016: 16bit_dungeon_tileset_10
+    21300018: 16bit_dungeon_tileset_11
+    21300020: 16bit_dungeon_tileset_12
+    21300022: 16bit_dungeon_tileset_13
+    21300024: 16bit_dungeon_tileset_14
+    21300026: 16bit_dungeon_tileset_15
+    21300028: 16bit_dungeon_tileset_16
+    21300030: 16bit_dungeon_tileset_17
+    21300032: 16bit_dungeon_tileset_18
+    21300034: 16bit_dungeon_tileset_19
+    21300036: 16bit_dungeon_tileset_20
+    21300038: 16bit_dungeon_tileset_21
+    21300040: 16bit_dungeon_tileset_22
+    21300042: 16bit_dungeon_tileset_23
+    21300044: 16bit_dungeon_tileset_24
+    21300046: 16bit_dungeon_tileset_25
+    21300048: 16bit_dungeon_tileset_26
+    21300050: 16bit_dungeon_tileset_27
+    21300052: 16bit_dungeon_tileset_28
+    21300054: 16bit_dungeon_tileset_29
+    21300056: 16bit_dungeon_tileset_30
+    21300058: 16bit_dungeon_tileset_31
+    21300060: 16bit_dungeon_tileset_32
+    21300062: 16bit_dungeon_tileset_33
+    21300064: 16bit_dungeon_tileset_34
+    21300066: 16bit_dungeon_tileset_35
+    21300068: 16bit_dungeon_tileset_36
+    21300070: 16bit_dungeon_tileset_37
+    21300072: 16bit_dungeon_tileset_38
+    21300074: 16bit_dungeon_tileset_39
+    21300076: 16bit_dungeon_tileset_40
+    21300078: 16bit_dungeon_tileset_41
+    21300080: 16bit_dungeon_tileset_42
+    21300082: 16bit_dungeon_tileset_43
+    21300084: 16bit_dungeon_tileset_44
+    21300086: 16bit_dungeon_tileset_45
+    21300088: 16bit_dungeon_tileset_46
+    21300090: 16bit_dungeon_tileset_47
+    21300092: 16bit_dungeon_tileset_48
+    21300094: 16bit_dungeon_tileset_49
+    21300096: 16bit_dungeon_tileset_50
+    21300098: 16bit_dungeon_tileset_51
+    21300100: 16bit_dungeon_tileset_52
+    21300102: 16bit_dungeon_tileset_53
+    21300104: 16bit_dungeon_tileset_54
+    21300106: 16bit_dungeon_tileset_55
+    21300108: 16bit_dungeon_tileset_56
+    21300110: 16bit_dungeon_tileset_57
+    21300112: 16bit_dungeon_tileset_58
+    21300114: 16bit_dungeon_tileset_59
+    21300116: 16bit_dungeon_tileset_60
+    21300118: 16bit_dungeon_tileset_61
+    21300120: 16bit_dungeon_tileset_62
+    21300122: 16bit_dungeon_tileset_63
+    21300124: 16bit_dungeon_tileset_64
+    21300126: 16bit_dungeon_tileset_65
+    21300128: 16bit_dungeon_tileset_66
+    21300130: 16bit_dungeon_tileset_67
+    21300132: 16bit_dungeon_tileset_68
+    21300134: 16bit_dungeon_tileset_69
+    21300136: 16bit_dungeon_tileset_70
+    21300138: 16bit_dungeon_tileset_71
+    21300140: 16bit_dungeon_tileset_72
+    21300142: 16bit_dungeon_tileset_73
+    21300144: 16bit_dungeon_tileset_74
+    21300146: 16bit_dungeon_tileset_75
+    21300148: 16bit_dungeon_tileset_76
+    21300150: 16bit_dungeon_tileset_77
+    21300152: 16bit_dungeon_tileset_78
+    21300154: 16bit_dungeon_tileset_79
+    21300156: 16bit_dungeon_tileset_80
+    21300158: 16bit_dungeon_tileset_81
+    21300160: 16bit_dungeon_tileset_82
+    21300162: 16bit_dungeon_tileset_83
+    21300164: 16bit_dungeon_tileset_84
+    21300166: 16bit_dungeon_tileset_85
+    21300168: 16bit_dungeon_tileset_86
+    21300170: 16bit_dungeon_tileset_87
+    21300172: 16bit_dungeon_tileset_88
+    21300174: 16bit_dungeon_tileset_89
+    21300176: 16bit_dungeon_tileset_90
+    21300178: 16bit_dungeon_tileset_91
+    21300180: 16bit_dungeon_tileset_92
+    21300182: 16bit_dungeon_tileset_93
+    21300184: 16bit_dungeon_tileset_94
+    21300186: 16bit_dungeon_tileset_95
+    21300188: 16bit_dungeon_tileset_96
+    21300190: 16bit_dungeon_tileset_97
+    21300192: 16bit_dungeon_tileset_98
+    21300194: 16bit_dungeon_tileset_99
+    21300196: 16bit_dungeon_tileset_100
+    21300198: 16bit_dungeon_tileset_101
+    21300200: 16bit_dungeon_tileset_102
+    21300202: 16bit_dungeon_tileset_103
+    21300204: 16bit_dungeon_tileset_104
+    21300206: 16bit_dungeon_tileset_105
+    21300208: 16bit_dungeon_tileset_106
+    21300210: 16bit_dungeon_tileset_107
+    21300212: 16bit_dungeon_tileset_108
+    21300214: 16bit_dungeon_tileset_109
+    21300216: 16bit_dungeon_tileset_110
+    21300218: 16bit_dungeon_tileset_111
+    21300220: 16bit_dungeon_tileset_112
+    21300222: 16bit_dungeon_tileset_113
+    21300224: 16bit_dungeon_tileset_114
+    21300226: 16bit_dungeon_tileset_115
+    21300228: 16bit_dungeon_tileset_116
+    21300230: 16bit_dungeon_tileset_117
+    21300232: 16bit_dungeon_tileset_118
+    21300234: 16bit_dungeon_tileset_119
+    21300236: 16bit_dungeon_tileset_120
+    21300238: 16bit_dungeon_tileset_121
+    21300240: 16bit_dungeon_tileset_122
+    21300242: 16bit_dungeon_tileset_123
+    21300244: 16bit_dungeon_tileset_124
+    21300246: 16bit_dungeon_tileset_125
+    21300248: 16bit_dungeon_tileset_126
+    21300250: 16bit_dungeon_tileset_127
+    21300252: 16bit_dungeon_tileset_128
+    21300254: 16bit_dungeon_tileset_129
+    21300256: 16bit_dungeon_tileset_130
+    21300258: 16bit_dungeon_tileset_131
+    21300260: 16bit_dungeon_tileset_132
+    21300262: 16bit_dungeon_tileset_133
+    21300264: 16bit_dungeon_tileset_134
+    21300266: 16bit_dungeon_tileset_135
+    21300268: 16bit_dungeon_tileset_136
+    21300270: 16bit_dungeon_tileset_137
+    21300272: 16bit_dungeon_tileset_138
+    21300274: 16bit_dungeon_tileset_139
+    21300276: 16bit_dungeon_tileset_140
+    21300278: 16bit_dungeon_tileset_141
+    21300280: 16bit_dungeon_tileset_142
+    21300282: 16bit_dungeon_tileset_143
+    21300284: 16bit_dungeon_tileset_144
+    21300286: 16bit_dungeon_tileset_145
+    21300288: 16bit_dungeon_tileset_146
+    21300290: 16bit_dungeon_tileset_147
+    21300292: 16bit_dungeon_tileset_148
+    21300294: 16bit_dungeon_tileset_149
+    21300296: 16bit_dungeon_tileset_150
+    21300298: 16bit_dungeon_tileset_151
+    21300300: 16bit_dungeon_tileset_152
+    21300302: 16bit_dungeon_tileset_153
+    21300304: 16bit_dungeon_tileset_154
+    21300306: 16bit_dungeon_tileset_155
+    21300308: 16bit_dungeon_tileset_156
+    21300310: 16bit_dungeon_tileset_157
+    21300312: 16bit_dungeon_tileset_158
+    21300314: 16bit_dungeon_tileset_159
+    21300316: 16bit_dungeon_tileset_160
+    21300318: 16bit_dungeon_tileset_161
+    21300320: 16bit_dungeon_tileset_162
+    21300322: 16bit_dungeon_tileset_163
+    21300324: 16bit_dungeon_tileset_164
+    21300326: 16bit_dungeon_tileset_165
+    21300328: 16bit_dungeon_tileset_166
+    21300330: 16bit_dungeon_tileset_167
+    21300332: 16bit_dungeon_tileset_168
+    21300334: 16bit_dungeon_tileset_169
+    21300336: 16bit_dungeon_tileset_170
+    21300338: 16bit_dungeon_tileset_171
+    21300340: 16bit_dungeon_tileset_172
+    21300342: 16bit_dungeon_tileset_173
+    21300344: 16bit_dungeon_tileset_174
+    21300346: 16bit_dungeon_tileset_175
+    21300348: 16bit_dungeon_tileset_176
+    21300350: 16bit_dungeon_tileset_177
+    21300352: 16bit_dungeon_tileset_178
+    21300354: 16bit_dungeon_tileset_179
+    21300356: 16bit_dungeon_tileset_180
+    21300358: 16bit_dungeon_tileset_181
+    21300360: 16bit_dungeon_tileset_182
+    21300362: 16bit_dungeon_tileset_183
+    21300364: 16bit_dungeon_tileset_184
+    21300366: 16bit_dungeon_tileset_185
+    21300368: 16bit_dungeon_tileset_186
+    21300370: 16bit_dungeon_tileset_187
+    21300372: 16bit_dungeon_tileset_188
+    21300374: 16bit_dungeon_tileset_189
+    21300376: 16bit_dungeon_tileset_190
+    21300378: 16bit_dungeon_tileset_191
+    21300380: 16bit_dungeon_tileset_192
+    21300382: 16bit_dungeon_tileset_193
+    21300384: 16bit_dungeon_tileset_194
+    21300386: 16bit_dungeon_tileset_195
+    21300388: 16bit_dungeon_tileset_196
+    21300390: 16bit_dungeon_tileset_197
+    21300392: 16bit_dungeon_tileset_198
+    21300394: 16bit_dungeon_tileset_199
+    21300396: 16bit_dungeon_tileset_200
+    21300398: 16bit_dungeon_tileset_201
+    21300400: 16bit_dungeon_tileset_202
+    21300402: 16bit_dungeon_tileset_203
+    21300404: 16bit_dungeon_tileset_204
+    21300406: 16bit_dungeon_tileset_205
+    21300408: 16bit_dungeon_tileset_206
+    21300410: 16bit_dungeon_tileset_207
+    21300412: 16bit_dungeon_tileset_208
+    21300414: 16bit_dungeon_tileset_209
+    21300416: 16bit_dungeon_tileset_210
+    21300418: 16bit_dungeon_tileset_211
+    21300420: 16bit_dungeon_tileset_212
+    21300422: 16bit_dungeon_tileset_213
+    21300424: 16bit_dungeon_tileset_214
+    21300426: 16bit_dungeon_tileset_215
+    21300428: 16bit_dungeon_tileset_216
+    21300430: 16bit_dungeon_tileset_217
+    21300432: 16bit_dungeon_tileset_218
+    21300434: 16bit_dungeon_tileset_219
+    21300436: 16bit_dungeon_tileset_220
+    21300438: 16bit_dungeon_tileset_221
+    21300440: 16bit_dungeon_tileset_222
+    21300442: 16bit_dungeon_tileset_223
+    21300444: 16bit_dungeon_tileset_224
+    21300446: 16bit_dungeon_tileset_225
+    21300448: 16bit_dungeon_tileset_226
+    21300450: 16bit_dungeon_tileset_227
+    21300452: 16bit_dungeon_tileset_228
+    21300454: 16bit_dungeon_tileset_229
+    21300456: 16bit_dungeon_tileset_230
+    21300458: 16bit_dungeon_tileset_231
+    21300460: 16bit_dungeon_tileset_232
+    21300462: 16bit_dungeon_tileset_233
+    21300464: 16bit_dungeon_tileset_234
+    21300466: 16bit_dungeon_tileset_235
+    21300468: 16bit_dungeon_tileset_236
+    21300470: 16bit_dungeon_tileset_237
+    21300472: 16bit_dungeon_tileset_238
+    21300474: 16bit_dungeon_tileset_239
+    21300476: 16bit_dungeon_tileset_240
+    21300478: 16bit_dungeon_tileset_241
+    21300480: 16bit_dungeon_tileset_242
+    21300482: 16bit_dungeon_tileset_243
+    21300484: 16bit_dungeon_tileset_244
+    21300486: 16bit_dungeon_tileset_245
+    21300488: 16bit_dungeon_tileset_246
+    21300490: 16bit_dungeon_tileset_247
+    21300492: 16bit_dungeon_tileset_248
+    21300494: 16bit_dungeon_tileset_249
+    21300496: 16bit_dungeon_tileset_250
+    21300498: 16bit_dungeon_tileset_251
+    21300500: 16bit_dungeon_tileset_252
+    21300502: 16bit_dungeon_tileset_253
+    21300504: 16bit_dungeon_tileset_254
+    21300506: 16bit_dungeon_tileset_255
+    21300508: 16bit_dungeon_tileset_256
+    21300510: 16bit_dungeon_tileset_257
+    21300512: 16bit_dungeon_tileset_258
+    21300514: 16bit_dungeon_tileset_259
+    21300516: 16bit_dungeon_tileset_260
+    21300518: 16bit_dungeon_tileset_261
+    21300520: 16bit_dungeon_tileset_262
+    21300522: 16bit_dungeon_tileset_263
+    21300524: 16bit_dungeon_tileset_264
+    21300526: 16bit_dungeon_tileset_265
+    21300528: 16bit_dungeon_tileset_266
+    21300530: 16bit_dungeon_tileset_267
+    21300532: 16bit_dungeon_tileset_268
+    21300534: 16bit_dungeon_tileset_269
+    21300536: 16bit_dungeon_tileset_270
+    21300538: 16bit_dungeon_tileset_271
+    21300540: 16bit_dungeon_tileset_272
+    21300542: 16bit_dungeon_tileset_273
+    21300544: 16bit_dungeon_tileset_274
+    21300546: 16bit_dungeon_tileset_275
+    21300548: 16bit_dungeon_tileset_276
+    21300550: 16bit_dungeon_tileset_277
+    21300552: 16bit_dungeon_tileset_278
+    21300554: 16bit_dungeon_tileset_279
+    21300556: 16bit_dungeon_tileset_280
+    21300558: 16bit_dungeon_tileset_281
+    21300560: 16bit_dungeon_tileset_282
+    21300562: 16bit_dungeon_tileset_283
+    21300564: 16bit_dungeon_tileset_284
+    21300566: 16bit_dungeon_tileset_285
+    21300568: 16bit_dungeon_tileset_286
+    21300570: 16bit_dungeon_tileset_287
+    21300572: 16bit_dungeon_tileset_288
+    21300574: 16bit_dungeon_tileset_289
+    21300576: 16bit_dungeon_tileset_290
+    21300578: 16bit_dungeon_tileset_291
+    21300580: 16bit_dungeon_tileset_292
+    21300582: 16bit_dungeon_tileset_293
+    21300584: 16bit_dungeon_tileset_294
+    21300586: 16bit_dungeon_tileset_295
+    21300588: 16bit_dungeon_tileset_296
+    21300590: 16bit_dungeon_tileset_297
+    21300592: 16bit_dungeon_tileset_298
+    21300594: 16bit_dungeon_tileset_299
+    21300596: 16bit_dungeon_tileset_300
+    21300598: 16bit_dungeon_tileset_301
+    21300600: 16bit_dungeon_tileset_302
+    21300602: 16bit_dungeon_tileset_303
+    21300604: 16bit_dungeon_tileset_304
+    21300606: 16bit_dungeon_tileset_305
+    21300608: 16bit_dungeon_tileset_306
+    21300610: 16bit_dungeon_tileset_307
+    21300612: 16bit_dungeon_tileset_308
+    21300614: 16bit_dungeon_tileset_309
+    21300616: 16bit_dungeon_tileset_310
+    21300618: 16bit_dungeon_tileset_311
+    21300620: 16bit_dungeon_tileset_312
+    21300622: 16bit_dungeon_tileset_313
+    21300624: 16bit_dungeon_tileset_314
+    21300626: 16bit_dungeon_tileset_315
+    21300628: 16bit_dungeon_tileset_316
+    21300630: 16bit_dungeon_tileset_317
+    21300632: 16bit_dungeon_tileset_318
+    21300634: 16bit_dungeon_tileset_319
+    21300636: 16bit_dungeon_tileset_320
+    21300638: 16bit_dungeon_tileset_321
+    21300640: 16bit_dungeon_tileset_322
+    21300642: 16bit_dungeon_tileset_323
+    21300644: 16bit_dungeon_tileset_324
+    21300646: 16bit_dungeon_tileset_325
+    21300648: 16bit_dungeon_tileset_326
+    21300650: 16bit_dungeon_tileset_327
+    21300652: 16bit_dungeon_tileset_328
+    21300654: 16bit_dungeon_tileset_329
+    21300656: 16bit_dungeon_tileset_330
+    21300658: 16bit_dungeon_tileset_331
+    21300660: 16bit_dungeon_tileset_332
+    21300662: 16bit_dungeon_tileset_333
+    21300664: 16bit_dungeon_tileset_334
+    21300666: 16bit_dungeon_tileset_335
+    21300668: 16bit_dungeon_tileset_336
+    21300670: 16bit_dungeon_tileset_337
+    21300672: 16bit_dungeon_tileset_338
+    21300674: 16bit_dungeon_tileset_339
+    21300676: 16bit_dungeon_tileset_340
+    21300678: 16bit_dungeon_tileset_341
+    21300680: 16bit_dungeon_tileset_342
+    21300682: 16bit_dungeon_tileset_343
+    21300684: 16bit_dungeon_tileset_344
+    21300686: 16bit_dungeon_tileset_345
+    21300688: 16bit_dungeon_tileset_346
+    21300690: 16bit_dungeon_tileset_347
+    21300692: 16bit_dungeon_tileset_348
+    21300694: 16bit_dungeon_tileset_349
+    21300696: 16bit_dungeon_tileset_350
+    21300698: 16bit_dungeon_tileset_351
+    21300700: 16bit_dungeon_tileset_352
+    21300702: 16bit_dungeon_tileset_353
+    21300704: 16bit_dungeon_tileset_354
+    21300706: 16bit_dungeon_tileset_355
+    21300708: 16bit_dungeon_tileset_356
+    21300710: 16bit_dungeon_tileset_357
+    21300712: 16bit_dungeon_tileset_358
+    21300714: 16bit_dungeon_tileset_359
+    21300716: 16bit_dungeon_tileset_360
+    21300718: 16bit_dungeon_tileset_361
+    21300720: 16bit_dungeon_tileset_362
+    21300722: 16bit_dungeon_tileset_363
+    21300724: 16bit_dungeon_tileset_364
+    21300726: 16bit_dungeon_tileset_365
+    21300728: 16bit_dungeon_tileset_366
+    21300730: 16bit_dungeon_tileset_367
+    21300732: 16bit_dungeon_tileset_368
+    21300734: 16bit_dungeon_tileset_369
+    21300736: 16bit_dungeon_tileset_370
+    21300738: 16bit_dungeon_tileset_371
+    21300740: 16bit_dungeon_tileset_372
+    21300742: 16bit_dungeon_tileset_373
+    21300744: 16bit_dungeon_tileset_374
+    21300746: 16bit_dungeon_tileset_375
+    21300748: 16bit_dungeon_tileset_376
+    21300750: 16bit_dungeon_tileset_377
+    21300752: 16bit_dungeon_tileset_378
+    21300754: 16bit_dungeon_tileset_379
+    21300756: 16bit_dungeon_tileset_380
+    21300758: 16bit_dungeon_tileset_381
+    21300760: 16bit_dungeon_tileset_382
+    21300762: 16bit_dungeon_tileset_383
+    21300764: 16bit_dungeon_tileset_384
+    21300766: 16bit_dungeon_tileset_385
+    21300768: 16bit_dungeon_tileset_386
+    21300770: 16bit_dungeon_tileset_387
+    21300772: 16bit_dungeon_tileset_388
+    21300774: 16bit_dungeon_tileset_389
+    21300776: 16bit_dungeon_tileset_390
+    21300778: 16bit_dungeon_tileset_391
+    21300780: 16bit_dungeon_tileset_392
+    21300782: 16bit_dungeon_tileset_393
+    21300784: 16bit_dungeon_tileset_394
+    21300786: 16bit_dungeon_tileset_395
+    21300788: 16bit_dungeon_tileset_396
+    21300790: 16bit_dungeon_tileset_397
+    21300792: 16bit_dungeon_tileset_398
+    21300794: 16bit_dungeon_tileset_399
+    21300796: 16bit_dungeon_tileset_400
+    21300798: 16bit_dungeon_tileset_401
+    21300800: 16bit_dungeon_tileset_402
+    21300802: 16bit_dungeon_tileset_403
+    21300804: 16bit_dungeon_tileset_404
+    21300806: 16bit_dungeon_tileset_405
+    21300808: 16bit_dungeon_tileset_406
+    21300810: 16bit_dungeon_tileset_407
+    21300812: 16bit_dungeon_tileset_408
+    21300814: 16bit_dungeon_tileset_409
+    21300816: 16bit_dungeon_tileset_410
+    21300818: 16bit_dungeon_tileset_411
+    21300820: 16bit_dungeon_tileset_412
+    21300822: 16bit_dungeon_tileset_413
+    21300824: 16bit_dungeon_tileset_414
+    21300826: 16bit_dungeon_tileset_415
+    21300828: 16bit_dungeon_tileset_416
+    21300830: 16bit_dungeon_tileset_417
+    21300832: 16bit_dungeon_tileset_418
+    21300834: 16bit_dungeon_tileset_419
+    21300836: 16bit_dungeon_tileset_420
+    21300838: 16bit_dungeon_tileset_421
+    21300840: 16bit_dungeon_tileset_422
+    21300842: 16bit_dungeon_tileset_423
+    21300844: 16bit_dungeon_tileset_424
+    21300846: 16bit_dungeon_tileset_425
+    21300848: 16bit_dungeon_tileset_426
+    21300850: 16bit_dungeon_tileset_427
+    21300852: 16bit_dungeon_tileset_428
+    21300854: 16bit_dungeon_tileset_429
+    21300856: 16bit_dungeon_tileset_430
+    21300858: 16bit_dungeon_tileset_431
+    21300860: 16bit_dungeon_tileset_432
+    21300862: 16bit_dungeon_tileset_433
+    21300864: 16bit_dungeon_tileset_434
+    21300866: 16bit_dungeon_tileset_435
+    21300868: 16bit_dungeon_tileset_436
+    21300870: 16bit_dungeon_tileset_437
+    21300872: 16bit_dungeon_tileset_438
+    21300874: 16bit_dungeon_tileset_439
+    21300876: 16bit_dungeon_tileset_440
+    21300878: 16bit_dungeon_tileset_441
+    21300880: 16bit_dungeon_tileset_442
+    21300882: 16bit_dungeon_tileset_443
+    21300884: 16bit_dungeon_tileset_444
+    21300886: 16bit_dungeon_tileset_445
+    21300888: 16bit_dungeon_tileset_446
+    21300890: 16bit_dungeon_tileset_447
+    21300892: 16bit_dungeon_tileset_448
+    21300894: 16bit_dungeon_tileset_449
+    21300896: 16bit_dungeon_tileset_450
+    21300898: 16bit_dungeon_tileset_451
+    21300900: 16bit_dungeon_tileset_452
+    21300902: 16bit_dungeon_tileset_453
+    21300904: 16bit_dungeon_tileset_454
+    21300906: 16bit_dungeon_tileset_455
+    21300908: 16bit_dungeon_tileset_456
+    21300910: 16bit_dungeon_tileset_457
+    21300912: 16bit_dungeon_tileset_458
+    21300914: 16bit_dungeon_tileset_459
+    21300916: 16bit_dungeon_tileset_460
+    21300918: 16bit_dungeon_tileset_461
+    21300920: 16bit_dungeon_tileset_462
+    21300922: 16bit_dungeon_tileset_463
+    21300924: 16bit_dungeon_tileset_464
+    21300926: 16bit_dungeon_tileset_465
+    21300928: 16bit_dungeon_tileset_466
+    21300930: 16bit_dungeon_tileset_6
+    21300932: 16bit_dungeon_tileset_7
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 496
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd86952f4ce7427591907e71f6cd6ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 496
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7c0976a1bd3466f9d3178959dd6f9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 496
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471a980b840e544d587698c371ecc27b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f726c4cd1e5c4c6f96c0c5732429e0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9504d2de136f8442f9dee1ae405efb81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebde253410ba14bb2a3da4826753384a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d78c7e4bad0f44b7912fe1d62108e72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2717a7e59f95147279cff8019cbedb9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc0694ba05ee440ab79fd29dbd1e622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccf0856d5bcf4bffaa49f6320105ed1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8298ee9c3efa4dff90af67a71576d25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6155939b9424f1c824e1d4449f7dc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3049c3cac239745a1855b0228e80a71e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e957ea93cb39e4ff78f2214c803f93a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd24b0bd2678649d382bcddfbd6e6e7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c42dca1f42f41aba3a72afe5aae0d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40928ac1bb02f46f6bf41ddc06d2c064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f5e018db8ce48ccb0bf81a641c964d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dcfa57989fe46d185f9329443e842e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc19e2d501be4f13bb876679248878a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad02fa2b19e14a59b327c0a76b258da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 496
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9446f360bbca44f14b32b020a1a51d8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca3660f438934364b5f383766b5f143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3061d0ab3f340018846f56374e3855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d10cdd6b49647dda5686595e0795f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7ca1dc3f0c24051a73aa7322768101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0bf4fab38ca44fc89e834344ae8828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916a36620e0644e5a88be1081d6b5042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775df43ce21fe448e9b92096cb59e4a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db202cf08c40f4a16b88db1fd049c731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9666c68d09315490aa9715bbfaaf816c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443bacc17e9004a6483f6eb073954100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165b105ef2c874263881db62f2a01d5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1016a846bbcf54efaae50ef9f0fdc128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d45e0d332a6644b291c0384fa9d800b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0db9f7a035b44279de386f5b15fae4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b029bb422c9f84d6c9eedb8b79b09cf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b612981ec20484883c465591432089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_38
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b78856a69b74a40998a1920e5a3735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e52a49b19014892967e42bb0f1e84a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bdac52547ed4d869d241f1f12f2208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c01ac1987614eb0bd925ebf1b38ba0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89353a79f74194218862ed201db1d308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921c4a169f544414ebe8791fd215b526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_44
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc29b54fedd94ce08aa64613c898e1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b84c332d6b74300974287374f6d666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0a6b40b7eb64ca6962b59a182fb472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d586957ff18948f09f67e1705efcfc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_48
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f074b146a0a05434f93143e351f7e8d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbbbc8fab82242709dd410d4eba0fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37117b357f727452aa8432dfb36edbed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e892bebe4d304b2d8e5296471b6511d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_52
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c1935946abc4bd995dca25df713ede
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a9e3a15ef6a47b3b1b366411cbde67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74e96d60150f45ccac29587072dd208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48522c31a23744a3080c30260cd2c314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_56
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bb09d3ea6bd46a6b370bcdae0bd0dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e7845606b71478d8ed2e083f8e8394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_58
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbc0971a87e447199a4a12c44e9a36d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_59
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d68e88d569645ca8c54a2e1bc3f036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_60
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7eefabd0a0704f15bc1425d9b2c15d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2a42b4954f147e79aef6cb2478810c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdab09be8e6a342a291062bc00ca779f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3888e2c4c06d49429f0630590ff3ad1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53304eaff31434142a3d42b98f682146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c572be427914c6ca26f3dbcf8f576a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c20c5b75ed294ef8b2b20adbab10c03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_67
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fa5367040644a63831b627aa9eac8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16bit_dungeon_tileset_68
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c06d5a1d88c3465a9fec9d9fe023418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 63c07ae5d421342c380252272dc88b91
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
