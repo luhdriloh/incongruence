@@ -1,4 +1,5 @@
 ﻿using System;
+
 using ActionGameFramework.Helpers;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ namespace ActionGameFramework.Projectiles
 
         public float _acceleration;
 
+        public float _accelerationDelta;
+
         public float _startSpeed;
 
         public float _damage;
@@ -25,6 +28,27 @@ namespace ActionGameFramework.Projectiles
         public ReturnToPool _returnToPool;
 
         public event Action fired;
+
+        private float _timeToLive;
+        private float _timeAlive;
+
+        private void Start()
+        {
+            float accelerationToAdd = UnityEngine.Random.Range(0, _accelerationDelta);
+            _acceleration -= accelerationToAdd;
+
+            // negative acceleration, so flip the sign
+            if (Mathf.Abs(_acceleration) >= Mathf.Epsilon)
+            {
+                _timeToLive = _startSpeed / -_acceleration;
+            }
+            else
+            {
+                _timeToLive = float.MaxValue;
+            }
+
+            _timeAlive = 0f;
+        }
 
         /// <summary>
         /// Fires this projectile from a designated start point to a designated world coordinate.
@@ -87,14 +111,17 @@ namespace ActionGameFramework.Projectiles
             _rigidbody = GetComponent<Rigidbody2D>();
         }
 
-        protected virtual void Update()
+        protected virtual void FixedUpdate()
         {
             if (!_fired)
             {
                 return;
             }
 
-            if (OutOfBounds())
+            _timeAlive += Time.deltaTime;
+
+            // cases for when to put bullet back into pool
+            if (_timeAlive >= _timeToLive || OutOfBounds())
             {
                 _returnToPool(this);
             }
@@ -116,11 +143,18 @@ namespace ActionGameFramework.Projectiles
             {
                 fired();
             }
+
+            _timeAlive = 0f;
         }
 
         private bool OutOfBounds()
         {
             return Utils._utilInstance.OutOfBounds(transform.position);
+        }
+
+        private void ReturnObjectToPool()
+        {
+            _returnToPool(this);
         }
     }
 }

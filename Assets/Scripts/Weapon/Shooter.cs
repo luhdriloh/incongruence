@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 using ActionGameFramework.Projectiles;
 
@@ -7,13 +6,17 @@ public class Shooter : MonoBehaviour
 {
     public GameObject _firepointGameObject;
     public ShooterStats _shooterStats;
-    private ProjectilePool _projectiles;
-    private Camera _camera;
+    public AudioClip _fireSfx;
 
-    private float _fireDelay;
-    private float _tapFireDelay;
-    private float _currentTimeBetweenShotFired;
+    protected Camera _camera;
+    protected float _fireDelay;
+    protected float _tapFireDelay;
+    protected float _currentTimeBetweenShotFired;
+
+    private ProjectilePool _projectiles;
+    private SoundEffectPlayer _soundEffectPlayer;
     private Transform _firepoint;
+    private AudioSource _audiosource;
 
 	private void Start ()
     {
@@ -22,54 +25,26 @@ public class Shooter : MonoBehaviour
 
         _currentTimeBetweenShotFired = 100f;
 
+        _soundEffectPlayer = SoundEffectPlayer._sfxPlayer;
         _projectiles = ProjectilePool._projectilePool[_shooterStats._projectileType];
         _camera = Camera.main;
         _firepoint = _firepointGameObject.transform;
+
+        _audiosource = GetComponent<AudioSource>();
     }
 
-    private void Update ()
+    protected void FireWeapon (float angle)
     {
-        // get mouse position then rotate sniper dude
-        Vector3 target = _camera.ScreenToWorldPoint(Input.mousePosition);
+        _soundEffectPlayer.PlaySoundEffect(_fireSfx);
 
-        // get mouse position then rotate sniper dude
-        Vector3 direction = target - transform.position;
+        for (int i = 0; i < _shooterStats._projectilesPerShot; i++)
+        { 
+            LinearProjectile projectile = _projectiles.GetObjectFromPool();
+            float bulletAngleOfTravel = Random.Range(-_shooterStats._recoilInDegrees, _shooterStats._recoilInDegrees) + angle;
 
-        // get player position, move and rotate towards that position
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = rotation;
-
-        // switch orientation of weapon depending on where you are pointing
-        if (Mathf.Abs(angle) >= 90)
-        {
-            transform.eulerAngles = new Vector3(0f, 180f, -transform.eulerAngles.z + 180f);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z);
+            projectile.FireInDirection(_firepoint.position, BulletTravelVector(bulletAngleOfTravel), bulletAngleOfTravel);
         }
 
-        _currentTimeBetweenShotFired += Time.deltaTime;
-
-        if (Input.GetMouseButtonDown(0) && _currentTimeBetweenShotFired >= _tapFireDelay)
-        {
-            FireWeapon(target, angle);
-        }
-
-        if (Input.GetMouseButton(0) && _currentTimeBetweenShotFired >= _fireDelay)
-        {
-            FireWeapon(target, angle);
-        }
-    }
-
-    private void FireWeapon (Vector3 target, float angle)
-    {
-        LinearProjectile projectile = _projectiles.GetObjectFromPool();
-        float bulletAngleOfTravel = Random.Range(-_shooterStats._recoilInDegrees, _shooterStats._recoilInDegrees) + angle;
-
-        projectile.FireInDirection(_firepoint.position, BulletTravelVector(bulletAngleOfTravel), bulletAngleOfTravel);
         _currentTimeBetweenShotFired = 0f;
     }
 

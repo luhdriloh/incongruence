@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d205311780e040d48de7c1a86ccc6e9, type: 3}
-  m_Name: PistolStats
+  m_Name: SMGStats
   m_EditorClassIdentifier: 
-  _description: Pistol Stats
-  _recoilInDegrees: 2
-  _rpmMax: 150
-  _rpmTapMax: 200
+  _description: SMGStats
+  _recoilInDegrees: 8
+  _rpmMax: 800
+  _rpmTapMax: 800
   _projectilesPerShot: 1
   _projectileType: bullet
