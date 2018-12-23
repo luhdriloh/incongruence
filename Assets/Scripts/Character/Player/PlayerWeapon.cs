@@ -28,6 +28,7 @@ public class PlayerWeapon : Shooter
 
     public void DropOnGround()
     {
+        // set in a random rotation
         _inUse = false;
         _boxCollider.gameObject.SetActive(true);
         transform.localPosition = new Vector3(0f, 0f, 0f);
@@ -43,7 +44,6 @@ public class PlayerWeapon : Shooter
         transform.localPosition = new Vector3(0f, 0f, -1);
         SetAsActive();
     }
-
 
 
     private void Update ()
@@ -78,6 +78,7 @@ public class PlayerWeapon : Shooter
 
         if (Input.GetMouseButtonDown(0) && _currentTimeBetweenShotFired >= _tapFireDelay)
         {
+            CinemachineCameraFunctions._cameraFunctions.StartCameraShake();
             FireWeapon(angle);
         }
 
@@ -85,7 +86,10 @@ public class PlayerWeapon : Shooter
         {
             FireWeapon(angle);
         }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            CinemachineCameraFunctions._cameraFunctions.StopCameraShake();
+        }
     }
-
-
 }

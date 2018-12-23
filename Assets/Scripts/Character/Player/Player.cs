@@ -4,35 +4,36 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public CharacterStats _playerStats;
     public List<PlayerWeapon> _shooters = new List<PlayerWeapon>(2);
-    public float _speed;
 
     private Rigidbody2D _rigidbody;
     private int _shooterActive;
 
     private bool _standingOnWeapon;
     private PlayerWeapon _weaponToPickup;
+    private int _health;
 
     private void Start ()
     {
         _shooterActive = 0;
         _rigidbody = GetComponent<Rigidbody2D>();
         transform.position += new Vector3(2f, 2f, 0f);
-	}
+        _health = _playerStats._health;
+    }
 	
 	private void Update () 
     {
-        PickupWeapon();
-        SwitchWeapon();
+        PickupItem();
+        SwitchToNextItem();
         Move();
 	}
 
     private void Move()
     {
         // get axis for sniper dude and move him about
-        Vector2 movementInDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Time.deltaTime * _speed;
-        Vector2 newPosition = (Vector2)transform.position + movementInDirection;
-        _rigidbody.MovePosition(newPosition);
+        Vector2 movementInDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * _playerStats._movementSpeed;
+        _rigidbody.velocity = movementInDirection;
     }
 
 
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour
     }
 
 
-    private void PickupWeapon()
+    private void PickupItem()
     {
         if (Input.GetKeyDown(KeyCode.E) && _standingOnWeapon)
         {
@@ -94,7 +95,7 @@ public class Player : MonoBehaviour
     }
 
     // change to agnostic 'item' instead of weapon
-    private void SwitchWeapon()
+    private void SwitchToNextItem()
     {
         if (Input.GetKeyDown(KeyCode.Space) && _shooters[_shooterActive] != null)
         {
@@ -132,5 +133,14 @@ public class Player : MonoBehaviour
     {
         _standingOnWeapon = false;
         _weaponToPickup = null;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        _health -= damage;
+        if (_health < 0)
+        {
+            Destroy(this);
+        }
     }
 }

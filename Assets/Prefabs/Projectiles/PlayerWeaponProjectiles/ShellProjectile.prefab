@@ -9,46 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1127685961389518}
+  m_RootGameObject: {fileID: 1264727590296990}
   m_IsPrefabAsset: 1
---- !u!1 &1127685961389518
+--- !u!1 &1264727590296990
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4106203287860736}
-  - component: {fileID: 50154056077538552}
-  - component: {fileID: 114273426056907068}
-  - component: {fileID: 212443662905573998}
-  m_Layer: 0
-  m_Name: SniperProjectile
+  - component: {fileID: 4322740269150908}
+  - component: {fileID: 50261796630713950}
+  - component: {fileID: 114268885122897740}
+  - component: {fileID: 212378551511118174}
+  - component: {fileID: 61602447317820882}
+  m_Layer: 12
+  m_Name: ShellProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4106203287860736
+--- !u!4 &4322740269150908
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1127685961389518}
+  m_GameObject: {fileID: 1264727590296990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.745032, y: 1.113156, z: -0.039427225}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalPosition: {x: 9.121935, y: -0.24511588, z: -0.17222415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50154056077538552
+--- !u!50 &50261796630713950
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1127685961389518}
+  m_GameObject: {fileID: 1264727590296990}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -62,28 +63,55 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &114273426056907068
+--- !u!61 &61602447317820882
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1264727590296990}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0014662743, y: -0.0014662147}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.21}
+    newSize: {x: 1.21875, y: 0.34375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6649637, y: 0.1366933}
+  m_EdgeRadius: 0
+--- !u!114 &114268885122897740
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1127685961389518}
+  m_GameObject: {fileID: 1264727590296990}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a24afa40986a44d4b609034db6b5ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _description: sniper
-  _acceleration: 0
-  _accelerationDelta: 0
-  _startSpeed: 50
-  _damage: 2
---- !u!212 &212443662905573998
+  _description: ShotgunShell
+  _acceleration: -15
+  _accelerationDelta: 30
+  _startSpeed: 30
+  _damage: 1
+  _projetileType: 0
+  _playerWeapon: 1
+--- !u!212 &212378551511118174
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1127685961389518}
+  m_GameObject: {fileID: 1264727590296990}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -113,12 +141,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: e45761b8e3fab4f41ac0c14c33679c09, type: 3}
+  m_Sprite: {fileID: 21300010, guid: e45761b8e3fab4f41ac0c14c33679c09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.68, y: 0.21}
+  m_Size: {x: 1.21875, y: 0.34375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 using ActionGameFramework.Projectiles;
+using ActionGameFramework.Helpers;
 
 public class Shooter : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class Shooter : MonoBehaviour
     private Transform _firepoint;
     private AudioSource _audiosource;
 
-	private void Start ()
+    protected void Start ()
     {
         _fireDelay = 60f / _shooterStats._rpmMax;
         _tapFireDelay = 60f / _shooterStats._rpmTapMax;
@@ -43,6 +44,20 @@ public class Shooter : MonoBehaviour
             float bulletAngleOfTravel = Random.Range(-_shooterStats._recoilInDegrees, _shooterStats._recoilInDegrees) + angle;
 
             projectile.FireInDirection(_firepoint.position, BulletTravelVector(bulletAngleOfTravel), bulletAngleOfTravel);
+        }
+
+        _currentTimeBetweenShotFired = 0f;
+    }
+
+    protected void FireLeadingShot(Vector2 target, Vector2 velocity)
+    {
+        _soundEffectPlayer.PlaySoundEffect(_fireSfx);
+        for (int i = 0; i < _shooterStats._projectilesPerShot; i++)
+        {
+            LinearProjectile projectile = _projectiles.GetObjectFromPool();
+            Vector3 targetLeadFireVector = Ballistics.CalculateLinearLeadingTargetPoint(transform.position, target, velocity, projectile._startSpeed, projectile._acceleration);
+
+            projectile.FireAtPoint(_firepoint.position, targetLeadFireVector);
         }
 
         _currentTimeBetweenShotFired = 0f;

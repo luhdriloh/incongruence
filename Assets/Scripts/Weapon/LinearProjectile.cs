@@ -5,6 +5,13 @@ using UnityEngine;
 
 namespace ActionGameFramework.Projectiles
 {
+    public enum ProjectileType
+    {
+        REGULAR = 0,
+        PIERCING = 1,
+        BOUNCE = 2,
+    };
+
     /// <summary>
     /// Simple IProjectile implementation for a projectile that flies in a straight line, optionally under m_Acceleration.
     /// </summary>
@@ -19,7 +26,11 @@ namespace ActionGameFramework.Projectiles
 
         public float _startSpeed;
 
-        public float _damage;
+        public int _damage;
+
+        public ProjectileType _projetileType;
+
+        public bool _playerWeapon;
 
         protected bool _fired;
 
@@ -155,6 +166,25 @@ namespace ActionGameFramework.Projectiles
         private void ReturnObjectToPool()
         {
             _returnToPool(this);
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.layer == LayerMask.NameToLayer("player") && _playerWeapon == false)
+            {
+            }
+            else if (collision.gameObject.layer == LayerMask.NameToLayer("enemy") && _playerWeapon == true)
+            {
+                collision.GetComponent<Enemy>().TakeDamage(_damage);
+                if (_projetileType != ProjectileType.PIERCING)
+                {
+                    _returnToPool(this);
+                }
+            }
+
+            if (collision.gameObject.layer == LayerMask.NameToLayer("map"))
+            { 
+            }
         }
     }
 }
