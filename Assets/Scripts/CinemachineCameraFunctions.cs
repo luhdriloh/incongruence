@@ -28,6 +28,7 @@ public class CinemachineCameraFunctions : MonoBehaviour
     private void Start()
     {
         _perlinNoise = _cinemachineCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        StopCameraShake();
     }
 
     public void StartCameraShake()

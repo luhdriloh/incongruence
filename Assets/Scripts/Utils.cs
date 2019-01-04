@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Utils : MonoBehaviour
 {
     public static Utils _utilInstance;
 
     private Camera _camera;
-    private float halfX, halfY;
 
     private void Start ()
     {
@@ -20,10 +17,6 @@ public class Utils : MonoBehaviour
             Destroy(this);
             return;
         }
-
-        Vector3 world = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
-        halfX = -world.x;
-        halfY = -world.y;
 
         _camera = Camera.main;
     }

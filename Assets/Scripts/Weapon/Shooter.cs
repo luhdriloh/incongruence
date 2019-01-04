@@ -17,7 +17,6 @@ public class Shooter : MonoBehaviour
     private ProjectilePool _projectiles;
     private SoundEffectPlayer _soundEffectPlayer;
     private Transform _firepoint;
-    private AudioSource _audiosource;
 
     protected void Start ()
     {
@@ -30,8 +29,6 @@ public class Shooter : MonoBehaviour
         _projectiles = ProjectilePool._projectilePool[_shooterStats._projectileType];
         _camera = Camera.main;
         _firepoint = _firepointGameObject.transform;
-
-        _audiosource = GetComponent<AudioSource>();
     }
 
     protected void FireWeapon (float angle)

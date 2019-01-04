@@ -3,14 +3,18 @@
 [CreateAssetMenu(fileName = "EnemyAIStats.asset", menuName = "EnemyAIStats/EnemyAIStats Stats", order = 1)]
 public class EnemyAIStats : ScriptableObject
 {
-    // attack variables
+    // bullet attack variables
     public float _attackFrequencyMin;
     public float _attackFrequencyMax;
-    public int _attackProjectileMin;
-    public int _attackProjectileMax;
+    public int _numOfProjectiles;
+
+    // pursuit variable
+    public bool _onSitePursue;
+    public float _minRangePursue;
+    public float _pursueTimeWhenNotInView;
+    public float _timeGapForCheckingIfPlayerInView;
 
     // movement variables
-    public bool _constantMovement;
     public float _movementFrequencyMin;
     public float _movementFrequencyMax;
 

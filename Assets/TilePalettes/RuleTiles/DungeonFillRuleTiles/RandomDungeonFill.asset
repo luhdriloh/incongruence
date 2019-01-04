@@ -34,11 +34,4 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   m_Sprites:
-  - {fileID: 21300020, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
-  - {fileID: 21300022, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
-  - {fileID: 21300024, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
-  - {fileID: 21300026, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
-  - {fileID: 21300028, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
-  - {fileID: 21300030, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
-  - {fileID: 21300032, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
-  - {fileID: 21300034, guid: 76f92cab430b34b309689ac62ede19f5, type: 3}
+  - {fileID: 21300522, guid: 32795dd98367c480dbeeca9e9359c913, type: 3}

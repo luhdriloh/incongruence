@@ -16,9 +16,13 @@ public class Player : MonoBehaviour
 
     private void Start ()
     {
+        // you get a pistol as default
         _shooterActive = 0;
+        _shooters[0] = GetComponentInChildren<PlayerWeapon>();
+        _shooters[_shooterActive].SetAsActive();
+
+
         _rigidbody = GetComponent<Rigidbody2D>();
-        transform.position += new Vector3(2f, 2f, 0f);
         _health = _playerStats._health;
     }
 	

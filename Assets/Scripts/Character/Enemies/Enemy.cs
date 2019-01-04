@@ -1,31 +1,70 @@
 ﻿using UnityEngine;
 
+public enum EnemyState
+{
+    PATROL = 0,
+    PURSUIT = 1,
+    IDLE = 2,
+};
+
+// this class defines basic behavior upon we can call using an patent class
 public class Enemy : MonoBehaviour
 {
-    public GameObject _player;
+    public static GameObject _player;
     public EnemyAIStats _enemyAiStats;
     public CharacterStats _enemyStats;
-
-    protected enum EnemyState
-    {
-        PATROL = 0,
-        PURSUIT = 1,
-        IDLE = 2,
-    };
     protected EnemyState _state;
 
+    protected SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody;
-    private SpriteRenderer _spriteRenderer;
     private EnemyWeapon _enemyWeapon;
     private int _health;
+
+    private float _nextMovement;
+    private float _timeSinceLastMovement;
 
     protected void ChangeState(EnemyState state)
     {
         _state = state;
     }
 
-    protected void CreateStateChange()
-    { 
+    protected bool InView()
+    {
+        return _spriteRenderer.isVisible;
+    }
+
+    protected bool PlayerInView()
+    {
+        // get direction toward player
+        Vector3 direction = (_player.transform.position - transform.position);
+        RaycastHit2D[] hits = new RaycastHit2D[2];
+
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(LayerMask.GetMask("mapedge", "player"));
+
+        int collidersHit = Physics2D.Raycast(transform.position, direction, filter, hits, _enemyAiStats._minRangePursue);
+        return collidersHit > 0 && hits[0].collider.gameObject.layer == LayerMask.NameToLayer("player");
+    }
+
+    protected virtual void Start()
+    {
+        if (_player == null)
+        {
+            _player = GameObject.FindWithTag("Player");
+        }
+
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _enemyWeapon = GetComponentInChildren<EnemyWeapon>();
+        _enemyWeapon.SetPlayerStats(_player);
+
+        _health = _enemyStats._health;
+        _nextMovement = 0f;
+        _timeSinceLastMovement = 0f;
+     }
+
+    protected void Update()
+    {
         switch (_state)
         {
             case EnemyState.IDLE:
@@ -40,58 +79,36 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    protected bool InView()
-    {
-        return _spriteRenderer.isVisible;
-    }
-
-    protected virtual void Start()
-    {
-        _rigidbody = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _enemyWeapon = GetComponentInChildren<EnemyWeapon>();
-        _enemyWeapon.SetPlayerStats(_player);
-
-        _health = _enemyStats._health;
-     }
-
     protected void Patrol()
     {
-        if (_state != EnemyState.PATROL)
+        _timeSinceLastMovement += Time.deltaTime;
+
+        if (_timeSinceLastMovement > _nextMovement)
         {
-            CreateStateChange();
+            // move around in a pattern around an area
+            float randomAngleToMoveTowards = Random.Range(0, 359);
+            float rads = randomAngleToMoveTowards * Mathf.Deg2Rad;
+
+            // set movement variables up for character
+            float timeToMoveFor = Random.Range(_enemyAiStats._movementTimeMin, _enemyAiStats._movementTimeMax);
+            Vector2 _directionToTravel = new Vector2(Mathf.Cos(rads), Mathf.Sin(rads)).normalized;
+
+            Move(_directionToTravel);
+            Invoke("Stop", timeToMoveFor);
+
+            // set variables up for the next movment
+            _nextMovement = timeToMoveFor + Random.Range(_enemyAiStats._movementFrequencyMin, _enemyAiStats._movementFrequencyMax);
+            _timeSinceLastMovement = 0f;
         }
-
-        // move around in a pattern around an area
-        float randomAngleToMoveTowards = Random.Range(0, 359);
-        float rads = randomAngleToMoveTowards * Mathf.Deg2Rad;
-
-        // set movement variables up for character
-        float timeToMoveFor = Random.Range(_enemyAiStats._movementTimeMin, _enemyAiStats._movementTimeMax);
-        Vector2 _directionToTravel = new Vector2(Mathf.Cos(rads), Mathf.Sin(rads)).normalized;
-
-        Move(_directionToTravel);
-        Invoke("Stop", timeToMoveFor);
-
-
-        // set variables up for the next movment
-        float nextMovement = timeToMoveFor + Random.Range(_enemyAiStats._movementFrequencyMin, _enemyAiStats._movementFrequencyMax);
-        Invoke("Patrol", nextMovement);
     }
 
     protected void Attack()
     {
-        int shotsToFire = Random.Range(_enemyAiStats._attackProjectileMin, _enemyAiStats._attackProjectileMax);
-        _enemyWeapon.FireWeaponAtPlayer(shotsToFire);
+        _enemyWeapon.FireWeaponAtPlayer(_enemyAiStats._numOfProjectiles);
     }
 
     protected void Pursue()
     {
-        if (_state != EnemyState.PURSUIT)
-        {
-            CreateStateChange();
-        }
-
         // if the enemy sees you it pursues
         Vector3 direction = (_player.transform.position - transform.position).normalized;
         Move(direction);
@@ -109,9 +126,11 @@ public class Enemy : MonoBehaviour
         _rigidbody.velocity = Vector2.zero;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, float bulletAngleAroundZAxis)
     {
         _health -= damage;
+        BloodSplatterEffect._bloodSplatterEffect.SpawnBloodSplatter(transform.position, bulletAngleAroundZAxis);
+
         if (_health <= 0)
         {
             Destroy(gameObject);

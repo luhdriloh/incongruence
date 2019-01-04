@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: BasicEnemy
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAIStats
+  _attackFrequencyMin: 3
+  _attackFrequencyMax: 7
+  _numOfProjectiles: 3
+  _onSitePursue: 0
+  _minRangePursue: 10
+  _pursueTimeWhenNotInView: 0
+  _timeGapForCheckingIfPlayerInView: 0
+  _movementFrequencyMin: 3
+  _movementFrequencyMax: 5
+  _movementTimeMin: 0.5
+  _movementTimeMax: 1

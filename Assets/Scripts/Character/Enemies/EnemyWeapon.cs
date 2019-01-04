@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class EnemyWeapon : Shooter
 {
-    private Transform _playerTransform;
-    private Rigidbody2D _playerRidgidBody;
+    private static Transform _playerTransform;
+    private static Rigidbody2D _playerRidgidBody;
     private int _shotsLeft;
 
     public void SetPlayerStats(GameObject player)
@@ -21,7 +21,7 @@ public class EnemyWeapon : Shooter
 
     private void FireWeaponAtPlayer()
     {
-        if (_shotsLeft < 0)
+        if (_shotsLeft <= 0)
         {
             return;
         }

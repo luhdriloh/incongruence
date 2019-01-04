@@ -132,7 +132,7 @@ namespace ActionGameFramework.Projectiles
             _timeAlive += Time.deltaTime;
 
             // cases for when to put bullet back into pool
-            if (_timeAlive >= _timeToLive || OutOfBounds())
+            if (_timeAlive >= _timeToLive)
             {
                 _returnToPool(this);
             }
@@ -158,11 +158,6 @@ namespace ActionGameFramework.Projectiles
             _timeAlive = 0f;
         }
 
-        private bool OutOfBounds()
-        {
-            return Utils._utilInstance.OutOfBounds(transform.position);
-        }
-
         private void ReturnObjectToPool()
         {
             _returnToPool(this);
@@ -175,15 +170,17 @@ namespace ActionGameFramework.Projectiles
             }
             else if (collision.gameObject.layer == LayerMask.NameToLayer("enemy") && _playerWeapon == true)
             {
-                collision.GetComponent<Enemy>().TakeDamage(_damage);
+                collision.GetComponent<Enemy>().TakeDamage(_damage, transform.eulerAngles.z);
                 if (_projetileType != ProjectileType.PIERCING)
                 {
                     _returnToPool(this);
                 }
             }
 
-            if (collision.gameObject.layer == LayerMask.NameToLayer("map"))
-            { 
+            if (collision.gameObject.layer == LayerMask.NameToLayer("mapedge"))
+            {
+                // if it is a bounce bullet we can make it bounce
+                _returnToPool(this);
             }
         }
     }
