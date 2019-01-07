@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d205311780e040d48de7c1a86ccc6e9, type: 3}
-  m_Name: PistolStats
+  m_Name: AA12ShotgunStats
   m_EditorClassIdentifier: 
-  _description: Pistol Stats
-  _recoilInDegrees: 2
-  _rpmMax: 250
-  _rpmTapMax: 350
-  _projectilesPerShot: 1
-  _projectileType: bullet
+  _description: AA12-Shotgun
+  _recoilInDegrees: 20
+  _rpmMax: 240
+  _rpmTapMax: 240
+  _projectilesPerShot: 10
+  _projectileType: 1

@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1274433495412962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.183513, y: 0.16833454, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.118988, y: -3.2389202, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,18 +75,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00586462, y: -0.0014660954}
+  m_Offset: {x: -0.011364937, y: -0.0014660954}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.4}
+    oldSize: {x: 1.81, y: 0.96}
     newSize: {x: 0.13, y: 0.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31203175, y: 0.32082868}
+  m_Size: {x: 0.78504467, y: 0.32082868}
   m_EdgeRadius: 0
 --- !u!114 &114698315679249630
 MonoBehaviour:
@@ -99,13 +99,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a24afa40986a44d4b609034db6b5ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _projectileEffect: 0
+  _muzzleFlashSprite: {fileID: 21300000, guid: d5ca7a36c7d2d40288598e078db63cf8, type: 3}
+  _playerWeapon: 1
   _description: Bullet Projectile
   _acceleration: 0
   _accelerationDelta: 0
   _startSpeed: 23
   _damage: 1
-  _projetileType: 0
-  _playerWeapon: 1
+  _muzzleFlashFrames: 3
 --- !u!212 &212057438107409576
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -141,7 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300014, guid: e45761b8e3fab4f41ac0c14c33679c09, type: 3}
+  m_Sprite: {fileID: 21300002, guid: d5ca7a36c7d2d40288598e078db63cf8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

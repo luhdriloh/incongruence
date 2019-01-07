@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public CharacterStats _playerStats;
+    public PlayerStats _playerStats;
     public List<PlayerWeapon> _shooters = new List<PlayerWeapon>(2);
 
     private Rigidbody2D _rigidbody;
@@ -14,13 +15,30 @@ public class Player : MonoBehaviour
     private PlayerWeapon _weaponToPickup;
     private int _health;
 
-    private void Start ()
+    private void Awake()
     {
+        // set up player ammo
+        _playerStats._ammo = new Dictionary<ProjectileType, int>();
+        foreach (ProjectileType type in Enum.GetValues(typeof(ProjectileType)))
+        {
+            _playerStats._ammo.Add(type, 0);
+        }
+
+        _playerStats._ammo[ProjectileType.BULLET] = 56;
+        _playerStats._ammo[ProjectileType.SHELL] = 32;
+        _playerStats._ammo[ProjectileType.SNIPER] = 32;
+        _playerStats._ammoMaxCarry = new Dictionary<ProjectileType, int>
+        {
+            { ProjectileType.BULLET, 256 },
+            { ProjectileType.SHELL, 56 },
+            { ProjectileType.SNIPER, 36 },
+        };
+
+
         // you get a pistol as default
         _shooterActive = 0;
         _shooters[0] = GetComponentInChildren<PlayerWeapon>();
         _shooters[_shooterActive].SetAsActive();
-
 
         _rigidbody = GetComponent<Rigidbody2D>();
         _health = _playerStats._health;

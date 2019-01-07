@@ -5,9 +5,21 @@ public class PlayerWeapon : Shooter
     private BoxCollider2D _boxCollider;
     private bool _inUse;
 
-    public void Awake()
+    private static PlayerStats _playerStats;
+    private float _timeForRecoil;
+
+    protected override void Start()
     {
+        base.Start();
+
         _boxCollider = GetComponent<BoxCollider2D>();
+
+        if (_playerStats == null)
+        {
+            _playerStats = GameObject.FindWithTag("Player").GetComponent<Player>()._playerStats;
+        }
+
+        _timeForRecoil = Mathf.Max(_tapFireDelay, _fireDelay) / 2;
     }
 
     public void SetAsActive()
@@ -76,20 +88,23 @@ public class PlayerWeapon : Shooter
 
         _currentTimeBetweenShotFired += Time.deltaTime;
 
+        if (_playerStats._ammo[_shooterStats._projectileType] <= 0)
+        {
+            return;
+        }
+
+        // shoot if we are tapping fast enough or auto fire
         if (Input.GetMouseButtonDown(0) && _currentTimeBetweenShotFired >= _tapFireDelay)
         {
-            CinemachineCameraFunctions._cameraFunctions.StartCameraShake();
+            //CinemachineCameraFunctions._cameraFunctions.StartCameraShake(_timeForRecoil);
             FireWeapon(angle);
+            _playerStats._ammo[_shooterStats._projectileType]--;
         }
-
-        if (Input.GetMouseButton(0) && _currentTimeBetweenShotFired >= _fireDelay)
+        else if (Input.GetMouseButton(0) && _currentTimeBetweenShotFired >= _fireDelay)
         {
+            //CinemachineCameraFunctions._cameraFunctions.StartCameraShake(_timeForRecoil);
             FireWeapon(angle);
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            CinemachineCameraFunctions._cameraFunctions.StopCameraShake();
+            _playerStats._ammo[_shooterStats._projectileType]--;
         }
     }
 }

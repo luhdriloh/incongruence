@@ -5,12 +5,20 @@ using ActionGameFramework.Projectiles;
 
 public delegate void ReturnToPool(LinearProjectile projectile);
 
+public enum ProjectileType
+{
+    BULLET = 0,
+    SHELL = 1,
+    SNIPER = 2,
+    ENEMY = 3
+};
+
 public class ProjectilePool : MonoBehaviour
 {
-    public static Dictionary<string, ProjectilePool> _projectilePool = new Dictionary<string, ProjectilePool>();
+    public static Dictionary<ProjectileType, ProjectilePool> _projectilePool = new Dictionary<ProjectileType, ProjectilePool>();
 
     public GameObject _weaponProjectile;
-    public string _projectileType;
+    public ProjectileType _projectileType;
     private Stack<LinearProjectile> _projectilesNotInUse;
 
     private void Awake()

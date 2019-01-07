@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 using ActionGameFramework.Helpers;
 using UnityEngine;
 
 namespace ActionGameFramework.Projectiles
 {
-    public enum ProjectileType
+    public enum ProjectileEffect
     {
         REGULAR = 0,
         PIERCING = 1,
@@ -18,30 +20,27 @@ namespace ActionGameFramework.Projectiles
     [RequireComponent(typeof(Rigidbody2D))]
     public class LinearProjectile : MonoBehaviour, IProjectile
     {
-        public string _description;
-
-        public float _acceleration;
-
-        public float _accelerationDelta;
-
-        public float _startSpeed;
-
-        public int _damage;
-
-        public ProjectileType _projetileType;
+        public ProjectileEffect _projectileEffect;
+        protected Rigidbody2D _rigidbody;
+        public ReturnToPool _returnToPool;
+        public event Action fired;
 
         public bool _playerWeapon;
-
         protected bool _fired;
-
-        protected Rigidbody2D _rigidbody;
-
-        public ReturnToPool _returnToPool;
-
-        public event Action fired;
+        public string _description;
+        public float _acceleration;
+        public float _accelerationDelta;
+        public float _startSpeed;
+        public int _damage;
+        public int _muzzleFlashFrames;
 
         private float _timeToLive;
         private float _timeAlive;
+
+        protected virtual void Awake()
+        {
+            _rigidbody = GetComponent<Rigidbody2D>();
+        }
 
         private void Start()
         {
@@ -117,11 +116,6 @@ namespace ActionGameFramework.Projectiles
             Fire(fireVelocity);
         }
 
-        protected virtual void Awake()
-        {
-            _rigidbody = GetComponent<Rigidbody2D>();
-        }
-
         protected virtual void FixedUpdate()
         {
             if (!_fired)
@@ -171,7 +165,7 @@ namespace ActionGameFramework.Projectiles
             else if (collision.gameObject.layer == LayerMask.NameToLayer("enemy") && _playerWeapon == true)
             {
                 collision.GetComponent<Enemy>().TakeDamage(_damage, transform.eulerAngles.z);
-                if (_projetileType != ProjectileType.PIERCING)
+                if (_projectileEffect != ProjectileEffect.PIERCING)
                 {
                     _returnToPool(this);
                 }

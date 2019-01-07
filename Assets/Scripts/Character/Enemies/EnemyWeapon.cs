@@ -1,5 +1,4 @@
-﻿using ActionGameFramework.Helpers;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyWeapon : Shooter
 {

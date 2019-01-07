@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4550035834517758}
   - component: {fileID: 212976888342832658}
-  - component: {fileID: 61075996362442560}
   - component: {fileID: 114815260311289848}
+  - component: {fileID: 61644527191884536}
   m_Layer: 13
   m_Name: Shotgun
   m_TagString: Untagged
@@ -37,8 +37,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4202206037063152}
+  - component: {fileID: 114249103699979134}
+  - component: {fileID: 212729161840894448}
   m_Layer: 13
-  m_Name: Firepoint
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1572276678499588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.58, y: 0, z: 0}
+  m_LocalPosition: {x: 4.42, y: 0.17, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4550035834517758}
@@ -64,14 +66,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402844343059012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.65, y: -3.81, z: -1}
+  m_LocalPosition: {x: 2.92, y: 2.57, z: -1}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_Children:
   - {fileID: 4202206037063152}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61075996362442560
+--- !u!61 &61644527191884536
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,19 +85,31 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.5868146, y: 0.052577525}
+  m_Offset: {x: 2.9503298, y: -0.03920655}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: -0.32706225, y: 0.5}
-    oldSize: {x: 3.56, y: 0.94}
+    pivot: {x: -0.3310789, y: 0.5419321}
+    oldSize: {x: 3.5499997, y: 0.93499994}
     newSize: {x: 3.56, y: 0.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.56, y: 0.93}
+  m_Size: {x: 3.5499995, y: 0.93499994}
   m_EdgeRadius: 0
+--- !u!114 &114249103699979134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1572276678499588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710db724c02ce49f6a8f27108bd35553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _muzzleFlashFrames: 3
 --- !u!114 &114815260311289848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +124,52 @@ MonoBehaviour:
   _firepointGameObject: {fileID: 1572276678499588}
   _shooterStats: {fileID: 11400000, guid: 2b52789180c9b419ab8c5c92de1e4e97, type: 2}
   _fireSfx: {fileID: 8300000, guid: 746867f570aca4fd98f2751f23ae3e2f, type: 3}
+--- !u!212 &212729161840894448
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1572276678499588}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d5ca7a36c7d2d40288598e078db63cf8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.68, y: 1.7}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!212 &212976888342832658
 SpriteRenderer:
   m_ObjectHideFlags: 1

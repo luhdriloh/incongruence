@@ -15,7 +15,7 @@ MonoBehaviour:
   _attackFrequencyMax: 7
   _numOfProjectiles: 3
   _onSitePursue: 0
-  _minRangePursue: 10
+  _minRangePursue: 15
   _pursueTimeWhenNotInView: 0
   _timeGapForCheckingIfPlayerInView: 0
   _movementFrequencyMin: 3

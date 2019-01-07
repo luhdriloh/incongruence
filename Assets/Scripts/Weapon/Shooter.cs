@@ -17,8 +17,9 @@ public class Shooter : MonoBehaviour
     private ProjectilePool _projectiles;
     private SoundEffectPlayer _soundEffectPlayer;
     private Transform _firepoint;
+    private MuzzleFlash _muzzleFlashComponent;
 
-    protected void Start ()
+    protected virtual void Start ()
     {
         _fireDelay = 60f / _shooterStats._rpmMax;
         _tapFireDelay = 60f / _shooterStats._rpmTapMax;
@@ -29,11 +30,13 @@ public class Shooter : MonoBehaviour
         _projectiles = ProjectilePool._projectilePool[_shooterStats._projectileType];
         _camera = Camera.main;
         _firepoint = _firepointGameObject.transform;
+        _muzzleFlashComponent = _firepointGameObject.GetComponent<MuzzleFlash>();
     }
 
     protected void FireWeapon (float angle)
     {
         _soundEffectPlayer.PlaySoundEffect(_fireSfx);
+        _muzzleFlashComponent.Fire();
 
         for (int i = 0; i < _shooterStats._projectilesPerShot; i++)
         { 
@@ -42,7 +45,7 @@ public class Shooter : MonoBehaviour
 
             projectile.FireInDirection(_firepoint.position, BulletTravelVector(bulletAngleOfTravel), bulletAngleOfTravel);
         }
-
+        
         _currentTimeBetweenShotFired = 0f;
     }
 

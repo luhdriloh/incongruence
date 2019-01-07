@@ -15,5 +15,5 @@ public class ShooterStats : ScriptableObject
 
     public int _projectilesPerShot;
 
-    public string _projectileType;
+    public ProjectileType _projectileType;
 }

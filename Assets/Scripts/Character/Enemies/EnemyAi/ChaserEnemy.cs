@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class ChaserEnemy : Enemy
+﻿public class ChaserEnemy : Enemy
 {
     protected override void Start()
     {

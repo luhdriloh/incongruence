@@ -34,16 +34,32 @@ public class LevelCreator : MonoBehaviour
         // water
         // flowers / mushrooms etc
 
-        DrawDungeonTiles(fillTiles, _tilemapToDrawFloor, _fillTile);
-        DrawDungeonTiles(edgeTiles, _tilemapToDrawEdge, _edgeTile);
+        DrawLevelOut(fillTiles, edgeTiles);
+        DecorateLevel(fillTiles, edgeTiles);
 
         // spawn enemies
         SpawnEnemies(fillTiles.ToList());
+        SpawnItems(fillTiles, edgeTiles);
 
         // set player position
         GameObject player = GameObject.FindWithTag("Player");
         Vector2 newPlayerPosition = FindPlayerStartPosition(edgeTiles, fillTiles);
         player.transform.position = new Vector3(newPlayerPosition.x, newPlayerPosition.y, player.transform.position.z);
+    }
+
+    private void DrawLevelOut(HashSet<Vector2Int> fillTiles, List<Vector2Int> edgeTiles)
+    {
+        DrawDungeonTiles(fillTiles, _tilemapToDrawFloor, _fillTile);
+        DrawDungeonTiles(edgeTiles, _tilemapToDrawEdge, _edgeTile);
+    }
+
+    private void DecorateLevel(HashSet<Vector2Int> fillTiles, List<Vector2Int> edgeTiles)
+    { 
+    
+    }
+
+    private void SpawnItems(HashSet<Vector2Int> map, List<Vector2Int> edgeTiles)
+    { 
     }
 
     private void SpawnEnemies(List<Vector2Int> map)
@@ -60,7 +76,7 @@ public class LevelCreator : MonoBehaviour
                 newEnemyLocationIndex = Random.Range(0, map.Count);
             }
 
-            Vector3 location = new Vector3(map[newEnemyLocationIndex].x, map[newEnemyLocationIndex].y, -1);
+            Vector3 location = new Vector3(map[newEnemyLocationIndex].x + .5f, map[newEnemyLocationIndex].y + .5f, -1f);
             Instantiate(_enemyPrototypes[typeOfEnemy], location, Quaternion.identity);
             placesUsed.Add(newEnemyLocationIndex);
         }
@@ -70,23 +86,22 @@ public class LevelCreator : MonoBehaviour
     {
         // take a random edge tile
         Vector2Int edgeTileSelected = edgeTiles[Random.Range(0, edgeTiles.Count)];
+        Vector2Int positionToCheck;
 
-        if (fillTiles.Contains(edgeTileSelected + new Vector2Int(0, 2)))
+        for (int i = -1; i < 2; i++)
         {
-            return edgeTileSelected + new Vector2Int(0, 2);
+            for (int j = -1; j < 2; j++)
+            {
+                positionToCheck = edgeTileSelected + new Vector2Int(i, j);
+                if (fillTiles.Contains(positionToCheck))
+                {
+                    return positionToCheck;
+                }
+            }
         }
-        else if (fillTiles.Contains(edgeTileSelected + new Vector2Int(0, -2)))
-        {
-            return edgeTileSelected + new Vector2Int(0, -2);
-        }
-        else if (fillTiles.Contains(edgeTileSelected + new Vector2Int(2, 0)))
-        {
-            return edgeTileSelected + new Vector2Int(2, 0);
-        }
-        else
-        {
-            return edgeTileSelected + new Vector2Int(-2, 0);
-        }
+
+        Debug.Log("no valid player position found");
+        return edgeTileSelected;
     }
 
     private void DrawDungeonTiles(IEnumerable<Vector2Int> tiles, Tilemap tilemapToUse, TileBase tilesToUse)
