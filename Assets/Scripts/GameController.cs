@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour
     {
         _gameOver = true;
         Time.timeScale = 0f;
-        _gameoverGUI.SetActive(true);
+        //_gameoverGUI.SetActive(true);
     }
 
     public void Restart()

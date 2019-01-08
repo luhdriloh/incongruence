@@ -128,7 +128,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage, float bulletAngleAroundZAxis)
     {
-        _health -= damage;
+        _health += damage;
         BloodSplatterEffect._bloodSplatterEffect.SpawnBloodSplatter(transform.position, bulletAngleAroundZAxis);
 
         if (_health <= 0)

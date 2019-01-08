@@ -18,11 +18,6 @@ public class SoundEffectPlayer : MonoBehaviour
             Destroy(this);
         }
 	}
-	
-	private void Update ()
-    {
-		
-	}
 
     public void PlaySoundEffect(AudioClip sfx)
     {

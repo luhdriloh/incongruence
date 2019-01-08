@@ -15,5 +15,5 @@ MonoBehaviour:
   _recoilInDegrees: 0
   _rpmMax: 300
   _rpmTapMax: 120
-  _projectilesPerShot: 1
+  _projectilesPerShot: 3
   _projectileType: 3

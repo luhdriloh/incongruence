@@ -159,19 +159,20 @@ namespace ActionGameFramework.Projectiles
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            bool remove = false;
+            
             if (collision.gameObject.layer == LayerMask.NameToLayer("player") && _playerWeapon == false)
             {
+                collision.GetComponent<Player>().HealthChange(-_damage);
+                remove = true;
             }
             else if (collision.gameObject.layer == LayerMask.NameToLayer("enemy") && _playerWeapon == true)
             {
-                collision.GetComponent<Enemy>().TakeDamage(_damage, transform.eulerAngles.z);
-                if (_projectileEffect != ProjectileEffect.PIERCING)
-                {
-                    _returnToPool(this);
-                }
+                collision.GetComponent<Enemy>().TakeDamage(-_damage, transform.eulerAngles.z);
+                remove = true;
             }
 
-            if (collision.gameObject.layer == LayerMask.NameToLayer("mapedge"))
+            if (collision.gameObject.layer == LayerMask.NameToLayer("mapedge") || (remove && _projectileEffect != ProjectileEffect.PIERCING))
             {
                 // if it is a bounce bullet we can make it bounce
                 _returnToPool(this);

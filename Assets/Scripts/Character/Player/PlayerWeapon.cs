@@ -5,7 +5,7 @@ public class PlayerWeapon : Shooter
     private BoxCollider2D _boxCollider;
     private bool _inUse;
 
-    private static PlayerStats _playerStats;
+    private static Player _player;
     private float _timeForRecoil;
 
     protected override void Start()
@@ -14,9 +14,9 @@ public class PlayerWeapon : Shooter
 
         _boxCollider = GetComponent<BoxCollider2D>();
 
-        if (_playerStats == null)
+        if (_player == null)
         {
-            _playerStats = GameObject.FindWithTag("Player").GetComponent<Player>()._playerStats;
+            _player = GameObject.FindWithTag("Player").GetComponent<Player>();
         }
 
         _timeForRecoil = Mathf.Max(_tapFireDelay, _fireDelay) / 2;
@@ -88,7 +88,7 @@ public class PlayerWeapon : Shooter
 
         _currentTimeBetweenShotFired += Time.deltaTime;
 
-        if (_playerStats._ammo[_shooterStats._projectileType] <= 0)
+        if (_player.GetAmmoAmount(_shooterStats._projectileType) <= 0)
         {
             return;
         }
@@ -98,13 +98,13 @@ public class PlayerWeapon : Shooter
         {
             //CinemachineCameraFunctions._cameraFunctions.StartCameraShake(_timeForRecoil);
             FireWeapon(angle);
-            _playerStats._ammo[_shooterStats._projectileType]--;
+            _player.AmmoChange(_shooterStats._projectileType, -1);
         }
         else if (Input.GetMouseButton(0) && _currentTimeBetweenShotFired >= _fireDelay)
         {
             //CinemachineCameraFunctions._cameraFunctions.StartCameraShake(_timeForRecoil);
             FireWeapon(angle);
-            _playerStats._ammo[_shooterStats._projectileType]--;
+            _player.AmmoChange(_shooterStats._projectileType, -1);
         }
     }
 }

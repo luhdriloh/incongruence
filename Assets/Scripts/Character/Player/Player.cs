@@ -3,8 +3,14 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
+public delegate void HealthChangeHandler(int newHealthValue, int maxHealthValue);
+public delegate void AmmoChangeHandler(Dictionary<ProjectileType, int> ammoCount, Dictionary<ProjectileType, int> maxCarry);
+
 public class Player : MonoBehaviour
 {
+    public event HealthChangeHandler _healthChangedEvent;
+    public event AmmoChangeHandler _ammoChangedEvent;
+
     public PlayerStats _playerStats;
     public List<PlayerWeapon> _shooters = new List<PlayerWeapon>(2);
 
@@ -13,7 +19,6 @@ public class Player : MonoBehaviour
 
     private bool _standingOnWeapon;
     private PlayerWeapon _weaponToPickup;
-    private int _health;
 
     private void Awake()
     {
@@ -26,7 +31,7 @@ public class Player : MonoBehaviour
 
         _playerStats._ammo[ProjectileType.BULLET] = 56;
         _playerStats._ammo[ProjectileType.SHELL] = 32;
-        _playerStats._ammo[ProjectileType.SNIPER] = 32;
+        _playerStats._ammo[ProjectileType.SNIPER] = 12;
         _playerStats._ammoMaxCarry = new Dictionary<ProjectileType, int>
         {
             { ProjectileType.BULLET, 256 },
@@ -41,7 +46,7 @@ public class Player : MonoBehaviour
         _shooters[_shooterActive].SetAsActive();
 
         _rigidbody = GetComponent<Rigidbody2D>();
-        _health = _playerStats._health;
+        _playerStats._health = _playerStats._maxHealth;
     }
 	
 	private void Update () 
@@ -157,12 +162,61 @@ public class Player : MonoBehaviour
         _weaponToPickup = null;
     }
 
-    public void TakeDamage(int damage)
+    public void AddHealthChangeSubscriber(HealthChangeHandler healthChangeHandler)
     {
-        _health -= damage;
-        if (_health < 0)
+        _healthChangedEvent += healthChangeHandler;
+    }
+
+    public void AddAmmoChangeSubscriber(AmmoChangeHandler ammoChangeHandler)
+    {
+        _ammoChangedEvent += ammoChangeHandler;
+    }
+
+    public void HealthChange(int healthAmount)
+    {
+        // change health based on if health is added or subtracted
+        _playerStats._health = healthAmount < 0
+            ? Mathf.Max(_playerStats._health + healthAmount, 0)
+            : Mathf.Min(_playerStats._health + healthAmount, _playerStats._maxHealth);
+
+        OnHealthChange();
+
+        if (_playerStats._health <= 0)
         {
+            // death animation
+            GameController._gameController.GameOver();
             Destroy(this);
+        }
+    }
+
+    public int GetAmmoAmount(ProjectileType ammoType)
+    {
+        return _playerStats._ammo[ammoType];
+    }
+
+    public void AmmoChange(ProjectileType ammoType, int changeAmount)
+    {
+        int newAmmoAmount = _playerStats._ammo[ammoType] + changeAmount;
+        _playerStats._ammo[ammoType] = changeAmount < 0 ?
+            Mathf.Max(newAmmoAmount, 0) :
+            Mathf.Min(newAmmoAmount, _playerStats._ammoMaxCarry[ammoType]);
+
+        OnAmmoChange();
+    }
+
+    protected virtual void OnHealthChange()
+    {
+        if (_healthChangedEvent != null)
+        {
+            _healthChangedEvent(_playerStats._health, _playerStats._maxHealth);
+        }
+    }
+
+    protected virtual void OnAmmoChange()
+    {
+        if (_ammoChangedEvent != null)
+        {
+            _ammoChangedEvent(_playerStats._ammo, _playerStats._ammoMaxCarry);
         }
     }
 }

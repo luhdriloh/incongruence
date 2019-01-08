@@ -4,6 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerStats.asset", menuName = "Player/Player Stats", order = 1)]
 public class PlayerStats : ScriptableObject
 {
+    public int _maxHealth;
     public int _health;
     public float _movementSpeed;
 
