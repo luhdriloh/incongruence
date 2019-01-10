@@ -16,4 +16,4 @@ MonoBehaviour:
   _rpmMax: 40
   _rpmTapMax: 40
   _projectilesPerShot: 2
-  _projectileType: 2
+  _projectileType: 3

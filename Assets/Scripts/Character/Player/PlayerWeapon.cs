@@ -98,13 +98,13 @@ public class PlayerWeapon : Shooter
         {
             //CinemachineCameraFunctions._cameraFunctions.StartCameraShake(_timeForRecoil);
             FireWeapon(angle);
-            _player.AmmoChange(_shooterStats._projectileType, -1);
+            _player.AmmoChange(_shooterStats._projectileType, -_shooterStats._projectilesPerShot);
         }
         else if (Input.GetMouseButton(0) && _currentTimeBetweenShotFired >= _fireDelay)
         {
             //CinemachineCameraFunctions._cameraFunctions.StartCameraShake(_timeForRecoil);
             FireWeapon(angle);
-            _player.AmmoChange(_shooterStats._projectileType, -1);
+            _player.AmmoChange(_shooterStats._projectileType, -_shooterStats._projectilesPerShot);
         }
     }
 }

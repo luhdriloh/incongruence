@@ -17,8 +17,10 @@ public class HealthBar : MonoBehaviour
         _yStart = _healthBar.transform.position.y;
         _zStart = _healthBar.transform.position.z;
 
-        // add health change event handler
-        player.GetComponent<Player>().AddHealthChangeSubscriber(UpdateHealth);
+        // add health change event handler and update to starting health
+        Player playerScript = player.GetComponent<Player>();
+        playerScript.AddHealthChangeSubscriber(UpdateHealth);
+        UpdateHealth(playerScript._playerStats._health, playerScript._playerStats._maxHealth);
     }
 
     public void UpdateHealth(int newHealthValue, int maxHealthValue)

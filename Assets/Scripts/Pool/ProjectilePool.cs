@@ -7,10 +7,11 @@ public delegate void ReturnToPool(LinearProjectile projectile);
 
 public enum ProjectileType
 {
-    BULLET = 0,
-    SHELL = 1,
-    SNIPER = 2,
-    ENEMY = 3
+    UNKNOWN = 0,
+    BULLET,
+    SHELL,
+    SNIPER,
+    ENEMY
 };
 
 public class ProjectilePool : MonoBehaviour

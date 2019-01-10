@@ -212,6 +212,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    public List<ProjectileType> GetPlayerWeaponTypes()
+    {
+        return new List<ProjectileType>
+        {
+            _shooters[0] != null ? _shooters[0]._shooterStats._projectileType : ProjectileType.UNKNOWN,
+            _shooters[1] != null ? _shooters[1]._shooterStats._projectileType : ProjectileType.UNKNOWN
+        };
+    }
+
     public int GetAmmoAmount(ProjectileType ammoType)
     {
         return _playerStats._ammo[ammoType];
