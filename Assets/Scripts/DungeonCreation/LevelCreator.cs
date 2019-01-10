@@ -6,24 +6,19 @@ using UnityEngine.Tilemaps;
 
 public class LevelCreator : MonoBehaviour
 {
+    public GameObject _gunBoxPrototype;
+    public LevelCreationData _levelCreationData;
     public Tilemap _tilemapToDrawFloor;
     public Tilemap _tilemapToDrawEdge;
 
     public TileBase _fillTile;
     public TileBase _edgeTile;
 
-    public bool _overlapAllowed;
-    public int _tileSize;
-    public int _numberOfWalkers;
-    public int _numberOfIterations;
-    public int _numberOfEnemies;
-    public List<GameObject> _enemyPrototypes;
-
     private HashSet<Vector2Int> _dungeonTiles;
 
     private void Start ()
     {
-        _dungeonTiles = DrunkWalkerDungeonCreator.CreateDungeon(_numberOfWalkers, _numberOfIterations, _overlapAllowed);
+        _dungeonTiles = DrunkWalkerDungeonCreator.CreateDungeon(_levelCreationData._numberOfWalkers, _levelCreationData._numberOfIterations, _levelCreationData._overlapAllowed);
 
         List<Vector2Int> dungeonTiles = ReturnListOfScaledTiles(_dungeonTiles);
         List<Vector2Int> edgeTiles = ReturnEdgeTiles(dungeonTiles);
@@ -35,11 +30,10 @@ public class LevelCreator : MonoBehaviour
         // flowers / mushrooms etc
 
         DrawLevelOut(fillTiles, edgeTiles);
-        DecorateLevel(fillTiles, edgeTiles);
 
         // spawn enemies
         SpawnEnemies(fillTiles.ToList());
-        SpawnItems(fillTiles, edgeTiles);
+        SpawnItems(fillTiles.ToList());
 
         // set player position
         GameObject player = GameObject.FindWithTag("Player");
@@ -53,22 +47,35 @@ public class LevelCreator : MonoBehaviour
         DrawDungeonTiles(edgeTiles, _tilemapToDrawEdge, _edgeTile);
     }
 
-    private void DecorateLevel(HashSet<Vector2Int> fillTiles, List<Vector2Int> edgeTiles)
-    { 
-    
-    }
+    private void SpawnItems(List<Vector2Int> map)
+    {
+        HashSet<int> placesUsed = new HashSet<int>();
+        int newItemLocation = Random.Range(0, map.Count);
 
-    private void SpawnItems(HashSet<Vector2Int> map, List<Vector2Int> edgeTiles)
-    { 
+        for (int i = 0; i < _levelCreationData._maxGunBoxesToSpawn; i++)
+        {
+            if (Random.value <= _levelCreationData._gunBoxSpawnPercentage)
+            {
+                while (placesUsed.Contains(newItemLocation))
+                {
+                    newItemLocation = Random.Range(0, map.Count);
+                }
+
+                Vector3 location = new Vector3(map[newItemLocation].x + .5f, map[newItemLocation].y + .5f, -1f);
+                GunBox newGunBox = Instantiate(_gunBoxPrototype, location, Quaternion.identity).GetComponent<GunBox>();
+                newGunBox._weaponsList = _levelCreationData._weaponsList;
+                newGunBox._weaponRates = _levelCreationData._weaponRates;
+            }
+        }
     }
 
     private void SpawnEnemies(List<Vector2Int> map)
     {
         HashSet<int> placesUsed = new HashSet<int>();
 
-        for (int i = 0; i < _numberOfEnemies; i++)
+        for (int i = 0; i < _levelCreationData._numberOfEnemies; i++)
         {
-            int typeOfEnemy = Random.Range(0, _enemyPrototypes.Count);
+            int typeOfEnemy = Random.Range(0, _levelCreationData._enemyPrototypes.Count);
             int newEnemyLocationIndex = Random.Range(0, map.Count);
 
             while (placesUsed.Contains(newEnemyLocationIndex))
@@ -77,7 +84,7 @@ public class LevelCreator : MonoBehaviour
             }
 
             Vector3 location = new Vector3(map[newEnemyLocationIndex].x + .5f, map[newEnemyLocationIndex].y + .5f, -1f);
-            Instantiate(_enemyPrototypes[typeOfEnemy], location, Quaternion.identity);
+            Instantiate(_levelCreationData._enemyPrototypes[typeOfEnemy], location, Quaternion.identity);
             placesUsed.Add(newEnemyLocationIndex);
         }
     }
@@ -118,12 +125,12 @@ public class LevelCreator : MonoBehaviour
 
         foreach (Vector2Int tileLocation in tiles)
         {
-            Vector2Int startPosition = tileLocation * _tileSize;
+            Vector2Int startPosition = tileLocation * _levelCreationData._tileSize;
             Vector2Int newPosition;
 
-            for (int i = 0; i < _tileSize; i++)
+            for (int i = 0; i < _levelCreationData._tileSize; i++)
             {
-                for (int j = 0; j < _tileSize; j++)
+                for (int j = 0; j < _levelCreationData._tileSize; j++)
                 {
                     newPosition = new Vector2Int(i, j) + new Vector2Int(startPosition.x, startPosition.y);
                     scaledTiles.Add(newPosition);

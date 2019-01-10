@@ -1,25 +1,23 @@
 fileFormatVersion: 2
-guid: 5ea86300d9c644f629f2d0bbb26e70ea
+guid: df9f3d4ba3c8141ce9ca105ea29f8aa0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: exterminator_tileset_0
-    21300002: exterminator_tileset_1
-    21300004: exterminator_tileset_2
-    21300006: exterminator_tileset_3
-    21300008: exterminator_tileset_4
-    21300010: exterminator_tileset_5
-    21300012: exterminator_tileset_6
-    21300014: exterminator_tileset_7
-    21300016: exterminator_tileset_8
-    21300018: exterminator_tileset_9
-    21300020: exterminator_tileset_10
-    21300022: exterminator_tileset_11
-    21300024: exterminator_tileset_12
-    21300026: exterminator_tileset_13
-    21300028: exterminator_tileset_14
-    21300030: exterminator_tileset_15
-    21300032: exterminator_tileset_16
-    21300034: exterminator_tileset_17
+    21300000: floor_sprite_lvl1_0
+    21300002: floor_sprite_lvl1_1
+    21300004: floor_sprite_lvl1_2
+    21300006: floor_sprite_lvl1_3
+    21300008: floor_sprite_lvl1_4
+    21300010: floor_sprite_lvl1_5
+    21300012: floor_sprite_lvl1_6
+    21300014: floor_sprite_lvl1_7
+    21300016: floor_sprite_lvl1_8
+    21300018: floor_sprite_lvl1_9
+    21300020: floor_sprite_lvl1_10
+    21300022: floor_sprite_lvl1_11
+    21300024: floor_sprite_lvl1_12
+    21300026: floor_sprite_lvl1_13
+    21300028: floor_sprite_lvl1_14
+    21300030: floor_sprite_lvl1_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -49,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -63,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +79,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,321 +111,321 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: exterminator_tileset_0
+      name: floor_sprite_lvl1_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 956
-        width: 66
-        height: 66
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e7a3dab5378424a987c1f9b5aad2f6
+      spriteID: 1228353330f0e47eb8a16903d506c1f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_1
+      name: floor_sprite_lvl1_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 835
-        width: 94
-        height: 103
+        x: 16
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a950e21554d4b96a9669f0dc8561c8
+      spriteID: 83c4f52ba5ab14443b82db0346196d39
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_2
+      name: floor_sprite_lvl1_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 835
-        width: 94
-        height: 103
+        x: 32
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c6b8ac2b906d47aa8e0c3ba137267fb
+      spriteID: 853e4a2f6cc184d4ea58246cfa6e4c91
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_3
+      name: floor_sprite_lvl1_3
       rect:
         serializedVersion: 2
-        x: 251
-        y: 835
-        width: 94
-        height: 103
+        x: 48
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be3540d0b769d44e7870e0141c057472
+      spriteID: 187989757e4194bd2a08175694747eeb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_4
+      name: floor_sprite_lvl1_4
       rect:
         serializedVersion: 2
-        x: 381
-        y: 828
-        width: 94
-        height: 104
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1769e2118534466288e01efa2c09067
+      spriteID: e8c4db5b1c2fe40e8b6ef4ea8fe97e8d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_5
+      name: floor_sprite_lvl1_5
       rect:
         serializedVersion: 2
-        x: 509
-        y: 828
-        width: 94
-        height: 104
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e39b1b22be39488eba804fd4010ad4d
+      spriteID: d05bb0e68472a485bab703612898a2e3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_6
+      name: floor_sprite_lvl1_6
       rect:
         serializedVersion: 2
-        x: 626
-        y: 828
-        width: 94
-        height: 104
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca4c9b721c41e4c828f161ba91b668b8
+      spriteID: e27b989af45ed4e73936be717f6521bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_7
+      name: floor_sprite_lvl1_7
       rect:
         serializedVersion: 2
-        x: 757
-        y: 826
-        width: 94
-        height: 104
+        x: 48
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b28de7c35f3b4b0e991f4595145b326
+      spriteID: e042653fac6d240188ac342b0ead14b4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_8
+      name: floor_sprite_lvl1_8
       rect:
         serializedVersion: 2
-        x: 895
-        y: 826
-        width: 94
-        height: 104
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17d8531f5b6dd43ed966c18ad50ad6dd
+      spriteID: 146b17dda7827466d965eed06e75203e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_9
+      name: floor_sprite_lvl1_9
       rect:
         serializedVersion: 2
-        x: 6
-        y: 706
-        width: 94
-        height: 104
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5addb1abf4b404497809928bb65a98cf
+      spriteID: 1def7eb1090df49359124f243d389040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_10
+      name: floor_sprite_lvl1_10
       rect:
         serializedVersion: 2
-        x: 6
-        y: 591
-        width: 94
-        height: 105
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c278f845153c6406b9571ae1293be440
+      spriteID: ea520db40fa794ec788cbd4f87f9c9d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_11
+      name: floor_sprite_lvl1_11
       rect:
         serializedVersion: 2
-        x: 131
-        y: 591
-        width: 94
-        height: 97
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cbd013a682314fb4b5ebddae3a0eb1d
+      spriteID: 249c298a8447143b8bdb1eebbccfd8bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_12
+      name: floor_sprite_lvl1_12
       rect:
         serializedVersion: 2
-        x: 255
-        y: 591
-        width: 94
-        height: 97
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0ed0e8edebee4096a0fc4be94c6dff5
+      spriteID: 2c368d68a2fdd44e0bbc9232f16a71bd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_13
+      name: floor_sprite_lvl1_13
       rect:
         serializedVersion: 2
-        x: 6
-        y: 417
-        width: 94
-        height: 103
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6ebe148d12bb4ae48f75fab7f95cdd1
+      spriteID: 27a8035d0263b4420b8151831203d09b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_14
+      name: floor_sprite_lvl1_14
       rect:
         serializedVersion: 2
-        x: 131
-        y: 417
-        width: 94
-        height: 97
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a57a43ae8e7f54521bcd3d08dfde81d5
+      spriteID: 228e84db31e3241ca9902982f6a753b9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_15
+      name: floor_sprite_lvl1_15
       rect:
         serializedVersion: 2
-        x: 255
-        y: 417
-        width: 94
-        height: 96
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a54f581b6060c47e5b139e0cad8a81a7
+      spriteID: a93c90ab36cf149c6be03f5e2792b75f
       vertices: []
       indices: 
       edges: []
@@ -435,7 +433,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e5fed8f28dfac472497e511ab3285caf
+    spriteID: 3923dd245b57241e5b8b804925870703
     vertices: []
     indices: 
     edges: []

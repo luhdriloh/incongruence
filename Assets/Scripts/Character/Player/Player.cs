@@ -15,9 +15,12 @@ public class Player : MonoBehaviour
     public List<PlayerWeapon> _shooters = new List<PlayerWeapon>(2);
 
     private Rigidbody2D _rigidbody;
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
     private int _shooterActive;
 
     private bool _standingOnWeapon;
+    private bool _walking;
     private PlayerWeapon _weaponToPickup;
 
     private void Awake()
@@ -39,14 +42,16 @@ public class Player : MonoBehaviour
             { ProjectileType.SNIPER, 36 },
         };
 
-
         // you get a pistol as default
         _shooterActive = 0;
         _shooters[0] = GetComponentInChildren<PlayerWeapon>();
         _shooters[_shooterActive].SetAsActive();
 
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _playerStats._health = _playerStats._maxHealth;
+        _walking = false;
     }
 	
 	private void Update () 
@@ -58,8 +63,26 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        // get axis for sniper dude and move him about
-        Vector2 movementInDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * _playerStats._movementSpeed;
+        float xMovement = Input.GetAxisRaw("Horizontal");
+
+        if (Mathf.Abs(xMovement) <= Mathf.Epsilon && _walking == true)
+        {
+            _spriteRenderer.flipX = false;
+            _animator.SetBool("walking", false);
+            _walking = false;
+        }
+        else if (Mathf.Abs(xMovement) > Mathf.Epsilon && _walking == false)
+        {
+            if (xMovement < 0)
+            {
+                _spriteRenderer.flipX = true;
+            }
+
+            _animator.SetBool("walking", true);
+            _walking = true;
+        }
+
+        Vector2 movementInDirection = new Vector2(xMovement, Input.GetAxisRaw("Vertical")).normalized * _playerStats._movementSpeed;
         _rigidbody.velocity = movementInDirection;
     }
 

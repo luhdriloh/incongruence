@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4550035834517758}
   - component: {fileID: 212976888342832658}
   - component: {fileID: 114815260311289848}
-  - component: {fileID: 61644527191884536}
+  - component: {fileID: 61360594605669154}
   m_Layer: 13
   m_Name: Shotgun
   m_TagString: Untagged
@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1572276678499588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.42, y: 0.17, z: -1}
+  m_LocalPosition: {x: 1.15, y: 0.08, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4550035834517758}
@@ -66,14 +66,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402844343059012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.92, y: 2.57, z: -1}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
+  m_LocalPosition: {x: -4.932356, y: -0.097476244, z: -1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 4202206037063152}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61644527191884536
+--- !u!61 &61360594605669154
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,18 +85,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.9503298, y: -0.03920655}
+  m_Offset: {x: 0.3627851, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: -0.3310789, y: 0.5419321}
-    oldSize: {x: 3.5499997, y: 0.93499994}
-    newSize: {x: 3.56, y: 0.93}
+    pivot: {x: -0.045997877, y: 0.4619935}
+    oldSize: {x: 1.56, y: 0.415}
+    newSize: {x: 1.56, y: 0.415}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5499995, y: 0.93499994}
+  m_Size: {x: 1.56, y: 0.415}
   m_EdgeRadius: 0
 --- !u!114 &114249103699979134
 MonoBehaviour:
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.56, y: 0.93}
+  m_Size: {x: 1.56, y: 0.415}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 5ea86300d9c644f629f2d0bbb26e70ea
+guid: 3b2073d41a0c546b1bc048a895644f3d
 TextureImporter:
   fileIDToRecycleName:
-    21300000: exterminator_tileset_0
-    21300002: exterminator_tileset_1
-    21300004: exterminator_tileset_2
-    21300006: exterminator_tileset_3
-    21300008: exterminator_tileset_4
-    21300010: exterminator_tileset_5
-    21300012: exterminator_tileset_6
-    21300014: exterminator_tileset_7
-    21300016: exterminator_tileset_8
-    21300018: exterminator_tileset_9
-    21300020: exterminator_tileset_10
-    21300022: exterminator_tileset_11
-    21300024: exterminator_tileset_12
-    21300026: exterminator_tileset_13
-    21300028: exterminator_tileset_14
-    21300030: exterminator_tileset_15
-    21300032: exterminator_tileset_16
-    21300034: exterminator_tileset_17
+    21300000: square-dude_0
+    21300002: square-dude_1
+    21300004: square-dude_2
+    21300006: square-dude_3
+    21300008: square-dude_4
+    21300010: square-dude_5
+    21300012: square-dude_6
+    21300014: square-dude_7
+    21300016: square-dude_8
+    21300018: square-dude_9
+    21300020: square-dude_10
+    21300022: square-dude_11
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -49,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -63,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +86,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +97,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: exterminator_tileset_0
+      name: square-dude_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 956
-        width: 66
-        height: 66
+        x: 3
+        y: 2
+        width: 26
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,19 +121,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e7a3dab5378424a987c1f9b5aad2f6
+      spriteID: 73d5ad05c24f349a58b9a447e0728e0a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_1
+      name: square-dude_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 835
-        width: 94
-        height: 103
+        x: 35
+        y: 2
+        width: 26
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,19 +141,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a950e21554d4b96a9669f0dc8561c8
+      spriteID: 1027e86708e7a4692897076834e79e84
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_2
+      name: square-dude_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 835
-        width: 94
-        height: 103
+        x: 67
+        y: 2
+        width: 26
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,19 +161,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c6b8ac2b906d47aa8e0c3ba137267fb
+      spriteID: d0fd59a046eaa497bac1bfebea8cf438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_3
+      name: square-dude_3
       rect:
         serializedVersion: 2
-        x: 251
-        y: 835
-        width: 94
-        height: 103
+        x: 99
+        y: 1
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,159 +181,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be3540d0b769d44e7870e0141c057472
+      spriteID: f0e8f2efd5c9f4d4ea1af8ca763ad5bb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_4
-      rect:
-        serializedVersion: 2
-        x: 381
-        y: 828
-        width: 94
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1769e2118534466288e01efa2c09067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: exterminator_tileset_5
-      rect:
-        serializedVersion: 2
-        x: 509
-        y: 828
-        width: 94
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e39b1b22be39488eba804fd4010ad4d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: exterminator_tileset_6
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 828
-        width: 94
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca4c9b721c41e4c828f161ba91b668b8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: exterminator_tileset_7
-      rect:
-        serializedVersion: 2
-        x: 757
-        y: 826
-        width: 94
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b28de7c35f3b4b0e991f4595145b326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: exterminator_tileset_8
-      rect:
-        serializedVersion: 2
-        x: 895
-        y: 826
-        width: 94
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17d8531f5b6dd43ed966c18ad50ad6dd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: exterminator_tileset_9
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 706
-        width: 94
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5addb1abf4b404497809928bb65a98cf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: exterminator_tileset_10
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 591
-        width: 94
-        height: 105
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c278f845153c6406b9571ae1293be440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: exterminator_tileset_11
+      name: square-dude_4
       rect:
         serializedVersion: 2
         x: 131
-        y: 591
-        width: 94
-        height: 97
+        y: 0
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,19 +201,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cbd013a682314fb4b5ebddae3a0eb1d
+      spriteID: 56c7e844cb992445dba426e7f528ca37
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_12
+      name: square-dude_5
       rect:
         serializedVersion: 2
-        x: 255
-        y: 591
-        width: 94
-        height: 97
+        x: 163
+        y: 3
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,19 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0ed0e8edebee4096a0fc4be94c6dff5
+      spriteID: dd4200c8356c54700945b4b8bfc66453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_13
+      name: square-dude_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 417
-        width: 94
-        height: 103
+        x: 195
+        y: 3
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,19 +241,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6ebe148d12bb4ae48f75fab7f95cdd1
+      spriteID: 53fbaaaf2e22f41019e57d8f8f2084fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_14
+      name: square-dude_7
       rect:
         serializedVersion: 2
-        x: 131
-        y: 417
-        width: 94
-        height: 97
+        x: 227
+        y: 2
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,19 +261,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a57a43ae8e7f54521bcd3d08dfde81d5
+      spriteID: 5e48a8a1195a648848bd38486bd10219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exterminator_tileset_15
+      name: square-dude_8
       rect:
         serializedVersion: 2
-        x: 255
-        y: 417
-        width: 94
-        height: 96
+        x: 259
+        y: 1
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,7 +281,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a54f581b6060c47e5b139e0cad8a81a7
+      spriteID: 0137599a80c8043e492e257c5340ff58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: square-dude_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbcdee1461d24f29a75b0a32eca1f5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: square-dude_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 2
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c296b922f06fb464a9fbf8525a8781cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: square-dude_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 2
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14c2711607b741c9a7722f2fd8953cb
       vertices: []
       indices: 
       edges: []
@@ -435,7 +349,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e5fed8f28dfac472497e511ab3285caf
+    spriteID: 6fb45179c412046489b3e1755fbf4a3f
     vertices: []
     indices: 
     edges: []

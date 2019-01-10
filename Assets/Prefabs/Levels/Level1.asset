@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9d0f1fa4fcc49da932c247b5d78668, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: 
+  _overlapAllowed: 1
+  _tileSize: 3
+  _numberOfWalkers: 2
+  _numberOfIterations: 60
+  _numberOfEnemies: 10
+  _enemyPrototypes:
+  - {fileID: 1187418862027418, guid: 6ac6928a1672e44c58de6fe4209b1637, type: 2}
+  _weaponsList:
+  - {fileID: 1009392742987612, guid: 941bd12304dbc46cb99fcdf89b49188c, type: 2}
+  - {fileID: 1402844343059012, guid: 6c5159253d1e94f968063bda950caec3, type: 2}
+  - {fileID: 1019884916224980, guid: 86110e26247f14bb386f565e2f0366a0, type: 2}
+  _weaponRates: 0a0000000a00000005000000
+  _maxGunBoxesToSpawn: 2
+  _gunBoxSpawnPercentage: 0.4

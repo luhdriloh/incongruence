@@ -5,6 +5,8 @@ public class GameController : MonoBehaviour
 {
     public static GameController _gameController;
     public GameObject _gameoverGUI;
+    public int _level = 0;
+
     public bool _gameOver = false;
 
     private void Awake()
@@ -31,6 +33,7 @@ public class GameController : MonoBehaviour
 
     public void Restart()
     {
+        _level = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

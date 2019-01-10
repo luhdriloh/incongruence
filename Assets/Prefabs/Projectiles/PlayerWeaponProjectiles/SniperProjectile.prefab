@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 50154056077538552}
   - component: {fileID: 114273426056907068}
   - component: {fileID: 212443662905573998}
-  - component: {fileID: 61500645777210818}
+  - component: {fileID: 61032611907086672}
   m_Layer: 12
   m_Name: SniperProjectile
   m_TagString: Untagged
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1127685961389518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.884421, y: 0.5348687, z: -0.039427225}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.204372, y: -1.1296341, z: -0.039427225}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61500645777210818
+--- !u!61 &61032611907086672
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,21 +72,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00066185, y: 0.0013237894}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.81999993, y: 0.27499998}
+    oldSize: {x: 0.405, y: 0.135}
     newSize: {x: 0.68, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6692467, y: 0.03851396}
+  m_Size: {x: 0.405, y: 0.135}
   m_EdgeRadius: 0
 --- !u!114 &114273426056907068
 MonoBehaviour:
@@ -142,7 +142,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: e45761b8e3fab4f41ac0c14c33679c09, type: 3}
+  m_Sprite: {fileID: 21300016, guid: e45761b8e3fab4f41ac0c14c33679c09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
